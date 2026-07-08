@@ -8,15 +8,14 @@
 	</header>
 	<div class="ba-grid">
 		<div class="ba-card">
-			<div class="ba-image ba-before"></div>
+			<img class="ba-image" src="/BeforeKasur.png" alt="Before" />
 			<span class="ba-tag">Before</span>
 		</div>
 		<div class="ba-card">
-			<div class="ba-image ba-after"></div>
+			<img class="ba-image" src="/AfterKasur.png" alt="After" />
 			<span class="ba-tag ba-tag-after">After</span>
 		</div>
 	</div>
-	<p class="ba-note">Ganti dengan foto hasil nyata dari tim Tentram.</p>
 </section>
 
 <style>
@@ -32,16 +31,12 @@
 		max-width: 380px;
 	}
 	.ba-image {
+		display: block;
 		width: 100%;
 		aspect-ratio: 4 / 3;
+		object-fit: cover;
 		border-radius: 14px;
 		border: 1px solid var(--line);
-	}
-	.ba-before {
-		background: repeating-linear-gradient(45deg, #d4d8d4 0 14px, #c2c8c2 14px 28px);
-	}
-	.ba-after {
-		background: linear-gradient(160deg, #eaf5ef, #d7ebe0);
 	}
 	.ba-tag {
 		position: absolute;
@@ -57,12 +52,6 @@
 	}
 	.ba-tag-after {
 		background: var(--green);
-	}
-	.ba-note {
-		text-align: center;
-		margin: 16px 0 0;
-		font-size: 13px;
-		color: var(--muted);
 	}
 	@media (min-width: 640px) {
 		.ba-grid {

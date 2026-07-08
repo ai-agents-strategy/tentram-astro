@@ -4,6 +4,7 @@ export interface Situation {
 	body: string;
 	cta: string;
 	msg: string;
+	badge?: string;
 }
 
 export interface Reason {
@@ -36,7 +37,7 @@ export const situations: Situation[] = [
 	{ img: '/kantor.png', title: 'Office Cleaning', body: 'Lingkungan kerja yang lebih nyaman untuk tim dan pelanggan.', cta: 'Saya butuh office cleaning', msg: 'Halo Tentram, kantor kami butuh cleaning rutin/berkala. Boleh minta penawaran?' },
 	{ img: '/deepcleantoilet.png', title: 'Deep Cleaning', body: 'Pembersihan menyeluruh hingga area yang jarang dibersihkan.', cta: 'Lihat deep cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Deep Cleaning. Boleh minta penawaran?' },
 	{ img: '/HydroCleaning.png', title: 'Hydro Cleaning', body: 'Cuci sofa, kasur, dan karpet dengan teknologi hydro extraction.', cta: 'Lihat hydro cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Hydro Cleaning (cuci sofa/kasur/karpet). Boleh minta penawaran?' },
-	{ img: '/cuci-ac.png', title: 'Cuci AC', body: 'AC dingin maksimal dan bebas bau tanpa perlu bongkar sendiri.', cta: 'Saya butuh cuci AC', msg: 'Halo Tentram, saya butuh layanan cuci AC. Boleh minta penawaran?' },
+	{ img: '/cuci-ac.png', title: 'Cuci AC', body: 'AC dingin maksimal dan bebas bau tanpa perlu bongkar sendiri.', cta: 'Saya butuh cuci AC', msg: 'Halo Tentram, saya butuh layanan cuci AC. Boleh minta penawaran?', badge: 'Baru' },
 	{ img: '/gudang.png', title: 'Cleaning Gudang', body: 'Bersihkan debu dan kotoran menumpuk agar gudang rapi dan aman digunakan.', cta: 'Saya butuh cleaning gudang', msg: 'Halo Tentram, saya butuh layanan cleaning gudang. Boleh minta penawaran?' },
 	{ img: '/kamar-mandi.png', title: 'Cleaning Kamar Mandi', body: 'Hilangkan kerak, jamur, dan bau tak sedap hingga kamar mandi kembali kinclong.', cta: 'Saya butuh cleaning kamar mandi', msg: 'Halo Tentram, saya butuh layanan cleaning kamar mandi. Boleh minta penawaran?' },
 ];

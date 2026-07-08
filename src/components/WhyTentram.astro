@@ -11,10 +11,8 @@ import { reasons } from '../data/content';
 		{reasons.map((r) => (
 			<article class="why">
 				<span class="why-emoji" aria-hidden="true">{r.emoji}</span>
-				<div>
-					<h3>{r.title}</h3>
-					<p>{r.body}</p>
-				</div>
+				<h3>{r.title}</h3>
+				<p>{r.body}</p>
 			</article>
 		))}
 	</div>
@@ -28,21 +26,31 @@ import { reasons } from '../data/content';
 	}
 	.why {
 		display: flex;
-		gap: 14px;
-		align-items: flex-start;
-		padding: 18px;
-		border-radius: 12px;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 10px;
+		padding: 28px 20px;
+		border-radius: 16px;
 		background: var(--surface);
-		border: 1px solid var(--line);
+		border: 1.5px solid var(--green);
 	}
 	.why-emoji {
 		flex-shrink: 0;
-		font-size: 22px;
+		display: inline-grid;
+		place-items: center;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background: var(--green);
+		font-size: 28px;
 		line-height: 1.2;
 	}
 	.why h3 {
-		margin: 0 0 3px;
-		font-size: 15.5px;
+		margin: 0;
+		font-size: 18px;
+		font-weight: 800;
+		color: var(--green);
 	}
 	.why p {
 		margin: 0;
@@ -57,7 +65,7 @@ import { reasons } from '../data/content';
 	}
 	@media (min-width: 900px) {
 		.grid-why {
-			grid-template-columns: repeat(3, 1fr);
+			grid-template-columns: repeat(4, 1fr);
 		}
 	}
 </style>

@@ -11,10 +11,12 @@ import { wa } from '../lib/whatsapp';
 	<div class="cards">
 		{situations.map((s) => (
 			<article class="card">
-				<span class="card-emoji" aria-hidden="true">{s.emoji}</span>
-				<h3>{s.title}</h3>
-				<p>{s.body}</p>
-				<a class="card-link" href={wa(s.msg)} target="_blank" rel="noopener">{s.cta} →</a>
+				<img class="card-img" src={s.img} alt={s.title} loading="lazy" />
+				<div class="card-body">
+					<h3>{s.title}</h3>
+					<p>{s.body}</p>
+					<a class="card-link" href={wa(s.msg)} target="_blank" rel="noopener">{s.cta} →</a>
+				</div>
 			</article>
 		))}
 	</div>
@@ -27,7 +29,7 @@ import { wa } from '../lib/whatsapp';
 		grid-template-columns: 1fr;
 	}
 	.card {
-		padding: 22px;
+		overflow: hidden;
 		border-radius: 14px;
 		background: var(--surface);
 		border: 1px solid var(--line);
@@ -37,20 +39,25 @@ import { wa } from '../lib/whatsapp';
 		border-color: var(--green);
 		transform: translateY(-2px);
 	}
-	.card-emoji {
-		display: inline-block;
-		font-size: 24px;
-		margin-bottom: 12px;
+	.card-img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+		object-position: top;
+	}
+	.card-body {
+		padding: 16px;
 	}
 	.card h3 {
 		margin: 0 0 6px;
 		font-size: 17px;
 	}
 	.card p {
-		margin: 0 0 14px;
+		margin: 0 0 12px;
 		color: var(--muted);
-		line-height: 1.5;
-		font-size: 14.5px;
+		line-height: 1.45;
+		font-size: 13.5px;
 	}
 	.card-link {
 		color: var(--green);

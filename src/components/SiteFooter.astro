@@ -3,9 +3,9 @@
 
 <footer class="site-footer">
 	<a class="brand" href="#top">
-		<span class="brand-mark" aria-hidden="true">✦</span>
-		<span>Tentram</span>
+		<img class="brand-logo" src="/logo-tentram.png" alt="Tentram" />
 	</a>
+	<p class="address">Jl. Dr. Susilo Raya No.111, RT.1/RW.5, Grogol, Kec. Grogol Petamburan, Jakarta Barat 11450 - Indonesia</p>
 	<p class="copy">© {new Date().getFullYear()} Tentram — Rumah bersih tanpa ribet.</p>
 </footer>
 
@@ -19,8 +19,13 @@
 	.site-footer :global(.brand) {
 		justify-content: center;
 	}
-	.copy {
+	.address {
 		margin: 12px 0 0;
+		font-size: 13px;
+		color: var(--muted);
+	}
+	.copy {
+		margin: 6px 0 0;
 		font-size: 13px;
 		color: var(--muted);
 	}

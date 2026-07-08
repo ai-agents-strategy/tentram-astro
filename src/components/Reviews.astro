@@ -57,6 +57,11 @@ import { reviews } from '../data/content';
 	}
 	@media (min-width: 640px) {
 		.reviews {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 900px) {
+		.reviews {
 			grid-template-columns: repeat(3, 1fr);
 		}
 	}

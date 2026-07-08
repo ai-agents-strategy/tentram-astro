@@ -1,14 +1,9 @@
 export interface Situation {
-	emoji: string;
+	img: string;
 	title: string;
 	body: string;
 	cta: string;
 	msg: string;
-}
-
-export interface Solution {
-	title: string;
-	body: string;
 }
 
 export interface Reason {
@@ -35,28 +30,22 @@ export interface Faq {
 }
 
 export const situations: Situation[] = [
-	{ emoji: '🧱', title: 'Baru Renovasi', body: 'Dibuangi debu, sisa semen, dan bekas cat hingga siap ditempati.', cta: 'Saya baru renovasi', msg: 'Halo Tentram, saya baru selesai renovasi rumah dan butuh pembersihan. Boleh minta penawaran?' },
-	{ emoji: '📦', title: 'Baru Pindahan', body: 'Setiap sudut dibersihkan sebelum Anda mulai menempati.', cta: 'Saya baru pindahan', msg: 'Halo Tentram, saya baru pindah rumah dan ingin move in cleaning. Boleh minta penawaran?' },
-	{ emoji: '🏠', title: 'Rumah Terasa Kotor', body: 'Tidak sempat membersihkan sendiri? Biarkan kami membantu.', cta: 'Saya butuh home cleaning', msg: 'Halo Tentram, saya butuh home cleaning untuk rumah saya. Boleh minta penawaran?' },
-	{ emoji: '🏢', title: 'Office Cleaning', body: 'Lingkungan kerja yang lebih nyaman untuk tim dan pelanggan.', cta: 'Saya butuh office cleaning', msg: 'Halo Tentram, kantor kami butuh cleaning rutin/berkala. Boleh minta penawaran?' },
-	{ emoji: '✨', title: 'Deep Cleaning', body: 'Pembersihan menyeluruh hingga area yang jarang dibersihkan.', cta: 'Lihat deep cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Deep Cleaning. Boleh minta penawaran?' },
-];
-
-export const solutions: Solution[] = [
-	{ title: 'Home Cleaning', body: 'Rumah bersih untuk aktivitas sehari-hari.' },
-	{ title: 'Deep Cleaning', body: 'Pembersihan detail hingga sudut ruangan.' },
-	{ title: 'Post Renovation', body: 'Membersihkan rumah setelah renovasi selesai.' },
-	{ title: 'Move In Cleaning', body: 'Masuk rumah baru dengan lebih nyaman.' },
-	{ title: 'Office Cleaning', body: 'Layanan cleaning rutin maupun berkala.' },
+	{ img: '/standar-kami.png', title: 'Baru Renovasi', body: 'Dibuangi debu, sisa semen, dan bekas cat hingga siap ditempati.', cta: 'Saya baru renovasi', msg: 'Halo Tentram, saya baru selesai renovasi rumah dan butuh pembersihan. Boleh minta penawaran?' },
+	{ img: '/airbnb-propertisewa.png', title: 'Baru Pindahan', body: 'Setiap sudut dibersihkan sebelum Anda mulai menempati.', cta: 'Saya baru pindahan', msg: 'Halo Tentram, saya baru pindah rumah dan ingin move in cleaning. Boleh minta penawaran?' },
+	{ img: '/hero-v3.png', title: 'Rumah Terasa Kotor', body: 'Tidak sempat membersihkan sendiri? Biarkan kami membantu.', cta: 'Saya butuh home cleaning', msg: 'Halo Tentram, saya butuh home cleaning untuk rumah saya. Boleh minta penawaran?' },
+	{ img: '/kantor.png', title: 'Office Cleaning', body: 'Lingkungan kerja yang lebih nyaman untuk tim dan pelanggan.', cta: 'Saya butuh office cleaning', msg: 'Halo Tentram, kantor kami butuh cleaning rutin/berkala. Boleh minta penawaran?' },
+	{ img: '/deepcleantoilet.png', title: 'Deep Cleaning', body: 'Pembersihan menyeluruh hingga area yang jarang dibersihkan.', cta: 'Lihat deep cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Deep Cleaning. Boleh minta penawaran?' },
+	{ img: '/HydroCleaning.png', title: 'Hydro Cleaning', body: 'Cuci sofa, kasur, dan karpet dengan teknologi hydro extraction.', cta: 'Lihat hydro cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Hydro Cleaning (cuci sofa/kasur/karpet). Boleh minta penawaran?' },
+	{ img: '/cuci-ac.png', title: 'Cuci AC', body: 'AC dingin maksimal dan bebas bau tanpa perlu bongkar sendiri.', cta: 'Saya butuh cuci AC', msg: 'Halo Tentram, saya butuh layanan cuci AC. Boleh minta penawaran?' },
+	{ img: '/gudang.png', title: 'Cleaning Gudang', body: 'Bersihkan debu dan kotoran menumpuk agar gudang rapi dan aman digunakan.', cta: 'Saya butuh cleaning gudang', msg: 'Halo Tentram, saya butuh layanan cleaning gudang. Boleh minta penawaran?' },
+	{ img: '/kamar-mandi.png', title: 'Cleaning Kamar Mandi', body: 'Hilangkan kerak, jamur, dan bau tak sedap hingga kamar mandi kembali kinclong.', cta: 'Saya butuh cleaning kamar mandi', msg: 'Halo Tentram, saya butuh layanan cleaning kamar mandi. Boleh minta penawaran?' },
 ];
 
 export const reasons: Reason[] = [
-	{ emoji: '👥', title: 'Tim Profesional', body: 'Tim yang telah mendapatkan pelatihan.' },
-	{ emoji: '⏰', title: 'Tepat Waktu', body: 'Datang sesuai jadwal.' },
-	{ emoji: '🏷️', title: 'Harga Transparan', body: 'Tidak ada biaya tersembunyi.' },
-	{ emoji: '🧰', title: 'Peralatan Lengkap', body: 'Tidak perlu menyiapkan alat sendiri.' },
-	{ emoji: '💬', title: 'Fast Response', body: 'Booking mudah melalui WhatsApp.' },
-	{ emoji: '✅', title: 'Quality Checklist', body: 'Setiap pekerjaan mengikuti standar operasional.' },
+	{ emoji: '📅', title: 'Bisa Pilih Jadwal', body: 'Atur waktu cleaning sesuai jadwal Anda.' },
+	{ emoji: '🧑‍🤝‍🧑', title: 'Bisa Pilih Mitra', body: 'Pilih mitra cleaning kepercayaan Anda.' },
+	{ emoji: '🔄', title: 'Bisa Reschedule', body: 'Ubah jadwal dengan mudah tanpa ribet.' },
+	{ emoji: '💳', title: 'Bisa Bayar Pakai Apa Aja', body: 'Berbagai metode pembayaran didukung.' },
 ];
 
 export const steps: Step[] = [
@@ -74,7 +63,7 @@ export const reviews: Review[] = [
 ];
 
 export const areas: string[] = [
-	'Jakarta', 'BSD', 'Alam Sutera', 'Gading Serpong', 'Bekasi', 'Depok', 'Tangerang', 'Cibubur', 'Bogor', 'dan area lainnya',
+	'Jakarta Selatan', 'Jakarta Barat', 'Jakarta Utara', 'Jakarta Timur', 'BSD City', 'Gading Serpong', 'Alam Sutera', 'Bintaro', 'Tangerang', 'Bekasi',
 ];
 
 export const faqs: Faq[] = [

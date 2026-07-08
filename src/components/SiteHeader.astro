@@ -4,8 +4,7 @@ import { wa } from '../lib/whatsapp';
 
 <header class="site-header">
 	<a class="brand" href="#top">
-		<span class="brand-mark" aria-hidden="true">✦</span>
-		<span>Tentram</span>
+		<img class="brand-logo" src="/logo-tentram.png" alt="Tentram" />
 	</a>
 	<nav class="nav-links" aria-label="Primary">
 		<a href="#situasi">Situasi</a>
@@ -16,7 +15,56 @@ import { wa } from '../lib/whatsapp';
 	<a class="btn btn-wa nav-cta" href={wa('Halo Tentram, saya tertarik dengan layanan cleaning. Boleh minta penawaran gratis?')} target="_blank" rel="noopener">
 		WhatsApp
 	</a>
+	<button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu">
+		<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+			<path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z" />
+		</svg>
+	</button>
+	<nav id="mobileMenu" class="mobile-menu" aria-label="Mobile" hidden>
+		<a href="#situasi">Situasi</a>
+		<a href="#solusi">Layanan</a>
+		<a href="#alasan">Kenapa Kami</a>
+		<a href="#faq">FAQ</a>
+	</nav>
 </header>
+
+<script>
+	const toggle = document.getElementById('navToggle');
+	const menu = document.getElementById('mobileMenu');
+
+	function closeMenu() {
+		menu?.setAttribute('hidden', '');
+		toggle?.setAttribute('aria-expanded', 'false');
+	}
+
+	toggle?.addEventListener('click', () => {
+		const isOpen = !menu?.hasAttribute('hidden');
+		if (isOpen) {
+			closeMenu();
+		} else {
+			menu?.removeAttribute('hidden');
+			toggle.setAttribute('aria-expanded', 'true');
+		}
+	});
+
+	menu?.addEventListener('click', (e) => {
+		if ((e.target as HTMLElement).tagName === 'A') closeMenu();
+	});
+
+	document.addEventListener('click', (e) => {
+		if (menu?.hasAttribute('hidden')) return;
+		const target = e.target as HTMLElement;
+		if (menu?.contains(target) || toggle?.contains(target)) return;
+		closeMenu();
+	});
+
+	document.addEventListener('keydown', (e) => {
+		if (e.key === 'Escape' && !menu?.hasAttribute('hidden')) {
+			closeMenu();
+			toggle?.focus();
+		}
+	});
+</script>
 
 <style>
 	.site-header {
@@ -28,8 +76,13 @@ import { wa } from '../lib/whatsapp';
 		justify-content: space-between;
 		gap: 12px;
 		padding: 18px 0;
-		background: rgba(255, 255, 255, 0.9);
-		backdrop-filter: blur(10px);
+		background: #fff;
+	}
+	@supports (backdrop-filter: blur(10px)) {
+		.site-header {
+			background: rgba(255, 255, 255, 0.9);
+			backdrop-filter: blur(10px);
+		}
 	}
 	.nav-links {
 		display: none;
@@ -41,12 +94,55 @@ import { wa } from '../lib/whatsapp';
 		color: var(--text);
 	}
 	.nav-cta {
+		margin-left: auto;
 		padding: 10px 16px;
 		font-size: 14px;
+	}
+	.nav-toggle {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 44px;
+		height: 44px;
+		padding: 0;
+		border: 1px solid var(--line);
+		border-radius: 8px;
+		background: var(--surface);
+		color: var(--text);
+	}
+	.mobile-menu {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		padding: 10px 0 16px;
+		background: #fff;
+		border-bottom: 1px solid var(--line);
+		box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+	}
+	.mobile-menu a {
+		padding: 12px 4px;
+		font-size: 15px;
+		font-weight: 500;
+		color: var(--text);
+		border-bottom: 1px solid var(--line);
+	}
+	.mobile-menu a:last-child {
+		border-bottom: none;
 	}
 	@media (min-width: 900px) {
 		.nav-links {
 			display: flex;
+		}
+		.nav-cta {
+			margin-left: 0;
+		}
+		.nav-toggle,
+		.mobile-menu {
+			display: none;
 		}
 	}
 </style>

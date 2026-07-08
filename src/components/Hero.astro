@@ -3,31 +3,91 @@ import { wa } from '../lib/whatsapp';
 ---
 
 <section id="top" class="hero">
-	<p class="eyebrow">Cleaning profesional · Jakarta & sekitarnya</p>
-	<h1 class="hero-title">Rumah bersih,<br /><em>tanpa ribet.</em></h1>
-	<p class="hero-sub">
-		Cleaning profesional untuk rumah, apartemen, dan kantor. Baru selesai
-		renovasi, baru pindahan, atau ingin rumah selalu bersih—tim Tentram siap
-		membantu.
-	</p>
-	<div class="hero-cta">
-		<a class="btn btn-wa btn-lg" href={wa('Halo Tentram, saya ingin dapat penawaran gratis untuk layanan cleaning.')} target="_blank" rel="noopener">
-			Dapatkan Penawaran Gratis
-		</a>
-		<a class="link" href="#situasi">Lihat layanan →</a>
+	<div class="hero-inner">
+		<div class="hero-copy">
+			<span class="eyebrow-pill">
+				<span class="dot" aria-hidden="true"></span>
+				Rumah atau Kantor Kamu Bersih 
+			</span>
+			<h1 class="hero-title">Mulai <em>Rp800 ribu</em><br />/bulan</h1>
+			<p class="hero-sub">
+				Nikmati layanan housekeeping cleaning service profesional untuk rumah, apartemen, dan kantor
+				dengan jadwal yang fleksibel dan tim terpercaya.
+			</p>
+			<div class="hero-cta">
+				<a class="btn btn-wa btn-lg" href={wa('Halo Tentram, saya ingin dapat penawaran gratis untuk layanan cleaning.')} target="_blank" rel="noopener">
+					Dapatkan Penawaran Gratis
+				</a>
+				<a class="link" href="#situasi">Lihat layanan →</a>
+			</div>
+			<ul class="trust" aria-label="Keunggulan">
+				<li>⭐ 4.95</li>
+				<li>Tim Profesional</li>
+				<li>Jadwal Fleksibel</li>
+				<li>Fast Response</li>
+			</ul>
+		</div>
+
+		<div class="hero-media">
+			<div class="hero-img-wrap">
+				<img class="hero-img" src="/hero-v3.png" alt="Tim cleaning profesional Tentram sedang membersihkan rumah" loading="eager" />
+			</div>
+			<aside class="hero-badge" aria-hidden="true">
+				<span class="hero-badge-stars">★★★★★</span>
+				<span class="hero-badge-text">4.95 · pelanggan puas</span>
+			</aside>
+		</div>
 	</div>
-	<ul class="trust" aria-label="Keunggulan">
-		<li>⭐ 4.8</li>
-		<li>Tim Profesional</li>
-		<li>Jadwal Fleksibel</li>
-		<li>Fast Response</li>
-	</ul>
 </section>
 
 <style>
 	.hero {
+		position: relative;
+		padding: 36px 0 28px;
+		overflow: hidden;
+	}
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: -120px;
+		right: -80px;
+		width: 360px;
+		height: 360px;
+		background: radial-gradient(circle, color-mix(in srgb, var(--green) 14%, transparent), transparent 70%);
+		pointer-events: none;
+		z-index: 0;
+	}
+	.hero-inner {
+		position: relative;
+		z-index: 1;
+		display: grid;
+		gap: 30px;
+		align-items: center;
+		grid-template-columns: 1fr;
+	}
+	.hero-copy {
 		text-align: center;
-		padding: 40px 0 24px;
+	}
+	.eyebrow-pill {
+		display: inline-flex;
+		align-items: center;
+		gap: 7px;
+		padding: 6px 12px;
+		border-radius: 999px;
+		background: color-mix(in srgb, var(--green) 10%, transparent);
+		color: var(--green);
+		font-size: 12px;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin: 0 0 16px;
+	}
+	.eyebrow-pill .dot {
+		width: 6px;
+		height: 6px;
+		border-radius: 50%;
+		background: var(--green);
+		box-shadow: 0 0 0 3px color-mix(in srgb, var(--green) 22%, transparent);
 	}
 	.hero-title {
 		margin: 0;
@@ -49,7 +109,7 @@ import { wa } from '../lib/whatsapp';
 		color: var(--muted);
 	}
 	.hero-cta {
-		margin: 30px auto 0;
+		margin: 28px auto 0;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -57,19 +117,69 @@ import { wa } from '../lib/whatsapp';
 	}
 	.trust {
 		list-style: none;
-		margin: 34px 0 0;
-		padding: 18px 0 0;
+		margin: 30px auto 0;
+		padding: 0;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 10px 22px;
-		font-size: 14px;
+		gap: 8px;
+		font-size: 13.5px;
 		color: var(--muted);
-		border-top: 1px solid var(--line);
 	}
+	.trust li {
+		padding: 6px 12px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		background: var(--surface);
+	}
+
+	.hero-media {
+		position: relative;
+		width: 100%;
+		max-width: 340px;
+		margin: 0 auto;
+	}
+	.hero-img-wrap {
+		border-radius: 16px;
+		overflow: hidden;
+		border: 1px solid var(--line);
+		background: var(--surface);
+		aspect-ratio: 5 / 4;
+	}
+	.hero-img {
+		display: block;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.hero-badge {
+		position: absolute;
+		left: 14px;
+		bottom: 14px;
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+		padding: 10px 14px;
+		border-radius: 12px;
+		background: rgba(255, 255, 255, 0.92);
+		backdrop-filter: blur(8px);
+		border: 1px solid var(--line);
+		box-shadow: 0 8px 24px -12px rgba(0, 0, 0, 0.25);
+	}
+	.hero-badge-stars {
+		color: #e3a52a;
+		letter-spacing: 2px;
+		font-size: 13px;
+	}
+	.hero-badge-text {
+		font-size: 12.5px;
+		font-weight: 600;
+		color: var(--text);
+	}
+
 	@media (min-width: 640px) {
 		.hero-title {
-			font-size: 56px;
+			font-size: 54px;
 		}
 		.hero-sub {
 			font-size: 18px;
@@ -81,10 +191,36 @@ import { wa } from '../lib/whatsapp';
 	}
 	@media (min-width: 900px) {
 		.hero {
-			padding: 64px 0 40px;
+			padding: 56px 0 44px;
+		}
+		.hero-inner {
+			grid-template-columns: 1.15fr 0.85fr;
+			gap: 48px;
+		}
+		.hero-copy {
+			text-align: left;
+		}
+		.hero-media {
+			margin: 0 0 0 auto;
+		}
+		.hero-sub {
+			margin-left: 0;
+		}
+		.hero-cta {
+			margin-left: 0;
+			justify-content: flex-start;
+		}
+		.trust {
+			margin-left: 0;
+			justify-content: flex-start;
 		}
 		.hero-title {
-			font-size: 64px;
+			font-size: 60px;
+		}
+	}
+	@media (min-width: 1024px) {
+		.hero-title {
+			font-size: 66px;
 		}
 	}
 </style>

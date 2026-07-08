@@ -1,0 +1,72 @@
+---
+---
+
+<section class="section">
+	<header class="section-head">
+		<p class="eyebrow">Lihat hasilnya</p>
+		<h2>Before & After</h2>
+	</header>
+	<div class="ba-grid">
+		<div class="ba-card">
+			<div class="ba-image ba-before"></div>
+			<span class="ba-tag">Before</span>
+		</div>
+		<div class="ba-card">
+			<div class="ba-image ba-after"></div>
+			<span class="ba-tag ba-tag-after">After</span>
+		</div>
+	</div>
+	<p class="ba-note">Ganti dengan foto hasil nyata dari tim Tentram.</p>
+</section>
+
+<style>
+	.ba-grid {
+		display: grid;
+		gap: 14px;
+		grid-template-columns: 1fr;
+		place-items: center;
+	}
+	.ba-card {
+		position: relative;
+		width: 100%;
+		max-width: 380px;
+	}
+	.ba-image {
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		border-radius: 14px;
+		border: 1px solid var(--line);
+	}
+	.ba-before {
+		background: repeating-linear-gradient(45deg, #d4d8d4 0 14px, #c2c8c2 14px 28px);
+	}
+	.ba-after {
+		background: linear-gradient(160deg, #eaf5ef, #d7ebe0);
+	}
+	.ba-tag {
+		position: absolute;
+		top: 12px;
+		left: 12px;
+		padding: 4px 10px;
+		border-radius: 6px;
+		font-size: 11px;
+		font-weight: 600;
+		letter-spacing: 0.04em;
+		background: #1b1b1b;
+		color: #fff;
+	}
+	.ba-tag-after {
+		background: var(--green);
+	}
+	.ba-note {
+		text-align: center;
+		margin: 16px 0 0;
+		font-size: 13px;
+		color: var(--muted);
+	}
+	@media (min-width: 640px) {
+		.ba-grid {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+</style>

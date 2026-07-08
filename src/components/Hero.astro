@@ -1,0 +1,90 @@
+---
+import { wa } from '../lib/whatsapp';
+---
+
+<section id="top" class="hero">
+	<p class="eyebrow">Cleaning profesional · Jakarta & sekitarnya</p>
+	<h1 class="hero-title">Rumah bersih,<br /><em>tanpa ribet.</em></h1>
+	<p class="hero-sub">
+		Cleaning profesional untuk rumah, apartemen, dan kantor. Baru selesai
+		renovasi, baru pindahan, atau ingin rumah selalu bersih—tim Tentram siap
+		membantu.
+	</p>
+	<div class="hero-cta">
+		<a class="btn btn-wa btn-lg" href={wa('Halo Tentram, saya ingin dapat penawaran gratis untuk layanan cleaning.')} target="_blank" rel="noopener">
+			Dapatkan Penawaran Gratis
+		</a>
+		<a class="link" href="#situasi">Lihat layanan →</a>
+	</div>
+	<ul class="trust" aria-label="Keunggulan">
+		<li>⭐ 4.8</li>
+		<li>Tim Profesional</li>
+		<li>Jadwal Fleksibel</li>
+		<li>Fast Response</li>
+	</ul>
+</section>
+
+<style>
+	.hero {
+		text-align: center;
+		padding: 40px 0 24px;
+	}
+	.hero-title {
+		margin: 0;
+		font-size: 42px;
+		line-height: 1.06;
+		letter-spacing: -0.035em;
+		font-weight: 700;
+	}
+	.hero-title em {
+		font-style: italic;
+		font-weight: 600;
+		color: var(--green);
+	}
+	.hero-sub {
+		margin: 18px auto 0;
+		max-width: 38ch;
+		font-size: 16.5px;
+		line-height: 1.6;
+		color: var(--muted);
+	}
+	.hero-cta {
+		margin: 30px auto 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+	}
+	.trust {
+		list-style: none;
+		margin: 34px 0 0;
+		padding: 18px 0 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px 22px;
+		font-size: 14px;
+		color: var(--muted);
+		border-top: 1px solid var(--line);
+	}
+	@media (min-width: 640px) {
+		.hero-title {
+			font-size: 56px;
+		}
+		.hero-sub {
+			font-size: 18px;
+		}
+		.hero-cta {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+	@media (min-width: 900px) {
+		.hero {
+			padding: 64px 0 40px;
+		}
+		.hero-title {
+			font-size: 64px;
+		}
+	}
+</style>

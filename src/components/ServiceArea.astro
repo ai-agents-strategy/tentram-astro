@@ -1,0 +1,34 @@
+---
+import { areas } from '../data/content';
+---
+
+<section class="section">
+	<header class="section-head">
+		<p class="eyebrow">Area layanan</p>
+		<h2>Kami melayani area Anda</h2>
+	</header>
+	<ul class="areas">
+		{areas.map((a) => <li>{a}</li>)}
+	</ul>
+</section>
+
+<style>
+	.areas {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+	}
+	.areas li {
+		padding: 8px 14px;
+		border-radius: 999px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--muted);
+	}
+</style>

@@ -1,0 +1,70 @@
+---
+import { situations } from '../data/content';
+import { wa } from '../lib/whatsapp';
+---
+
+<section id="situasi" class="section">
+	<header class="section-head">
+		<p class="eyebrow">Apa yang sedang Anda alami?</p>
+		<h2>Pilih situasi Anda</h2>
+	</header>
+	<div class="cards">
+		{situations.map((s) => (
+			<article class="card">
+				<span class="card-emoji" aria-hidden="true">{s.emoji}</span>
+				<h3>{s.title}</h3>
+				<p>{s.body}</p>
+				<a class="card-link" href={wa(s.msg)} target="_blank" rel="noopener">{s.cta} →</a>
+			</article>
+		))}
+	</div>
+</section>
+
+<style>
+	.cards {
+		display: grid;
+		gap: 14px;
+		grid-template-columns: 1fr;
+	}
+	.card {
+		padding: 22px;
+		border-radius: 14px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+		transition: border-color 0.18s ease, transform 0.18s ease;
+	}
+	.card:hover {
+		border-color: var(--green);
+		transform: translateY(-2px);
+	}
+	.card-emoji {
+		display: inline-block;
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	.card h3 {
+		margin: 0 0 6px;
+		font-size: 17px;
+	}
+	.card p {
+		margin: 0 0 14px;
+		color: var(--muted);
+		line-height: 1.5;
+		font-size: 14.5px;
+	}
+	.card-link {
+		color: var(--green);
+		font-weight: 600;
+		font-size: 14.5px;
+	}
+	@media (min-width: 640px) {
+		.cards {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 900px) {
+		.cards {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

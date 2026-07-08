@@ -1,0 +1,65 @@
+---
+import { steps } from '../data/content';
+import { wa } from '../lib/whatsapp';
+---
+
+<section class="section">
+	<header class="section-head">
+		<p class="eyebrow">Cara kerja</p>
+		<h2>Booking dalam 5 langkah</h2>
+	</header>
+	<ol class="steps">
+		{steps.map((s) => (
+			<li class="step">
+				<span class="step-n">{s.n}</span>
+				<div>
+					<h3>{s.title}</h3>
+					<p>{s.body}</p>
+				</div>
+			</li>
+		))}
+	</ol>
+	<a class="btn btn-wa btn-lg center" href={wa('Halo Tentram, saya ingin booking layanan cleaning.')} target="_blank" rel="noopener">
+		Chat WhatsApp
+	</a>
+</section>
+
+<style>
+	.steps {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 10px;
+	}
+	.step {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		padding: 14px 18px;
+		border-radius: 12px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+	}
+	.step-n {
+		flex-shrink: 0;
+		display: inline-grid;
+		place-items: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: var(--green);
+		color: #fff;
+		font-weight: 700;
+		font-size: 14px;
+	}
+	.step h3 {
+		margin: 0 0 1px;
+		font-size: 15px;
+	}
+	.step p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 13.5px;
+	}
+</style>

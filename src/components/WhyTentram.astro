@@ -1,0 +1,63 @@
+---
+import { reasons } from '../data/content';
+---
+
+<section id="alasan" class="section">
+	<header class="section-head">
+		<p class="eyebrow">Kenapa Tentram?</p>
+		<h2>Kami jawab kekhawatiran Anda</h2>
+	</header>
+	<div class="grid-why">
+		{reasons.map((r) => (
+			<article class="why">
+				<span class="why-emoji" aria-hidden="true">{r.emoji}</span>
+				<div>
+					<h3>{r.title}</h3>
+					<p>{r.body}</p>
+				</div>
+			</article>
+		))}
+	</div>
+</section>
+
+<style>
+	.grid-why {
+		display: grid;
+		gap: 12px;
+		grid-template-columns: 1fr;
+	}
+	.why {
+		display: flex;
+		gap: 14px;
+		align-items: flex-start;
+		padding: 18px;
+		border-radius: 12px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+	}
+	.why-emoji {
+		flex-shrink: 0;
+		font-size: 22px;
+		line-height: 1.2;
+	}
+	.why h3 {
+		margin: 0 0 3px;
+		font-size: 15.5px;
+	}
+	.why p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 14px;
+		line-height: 1.45;
+	}
+	@media (min-width: 640px) {
+		.grid-why {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	@media (min-width: 900px) {
+		.grid-why {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

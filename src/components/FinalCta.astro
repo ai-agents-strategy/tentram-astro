@@ -1,0 +1,50 @@
+---
+import { wa } from '../lib/whatsapp';
+---
+
+<section class="final-cta">
+	<h2>Siap memiliki rumah yang lebih bersih?</h2>
+	<p>
+		Daripada menghabiskan waktu membersihkan sendiri, biarkan tim Tentram
+		membantu Anda mendapatkan rumah atau kantor yang bersih, nyaman, dan
+		siap digunakan.
+	</p>
+	<div class="final-cta-buttons">
+		<a class="btn btn-wa btn-lg" href={wa('Halo Tentram, saya ingin mendapatkan penawaran gratis.')} target="_blank" rel="noopener">
+			Dapatkan Penawaran Gratis
+		</a>
+		<a class="btn btn-outline btn-lg" href={wa('Halo Tentram, saya ingin chat via WhatsApp.')} target="_blank" rel="noopener">
+			Chat via WhatsApp
+		</a>
+	</div>
+</section>
+
+<style>
+	.final-cta {
+		padding: 48px 0 8px;
+		text-align: center;
+	}
+	.final-cta h2 {
+		font-size: 28px;
+		letter-spacing: -0.02em;
+	}
+	.final-cta p {
+		margin: 14px auto 26px;
+		max-width: 44ch;
+		color: var(--muted);
+		font-size: 16px;
+		line-height: 1.6;
+	}
+	.final-cta-buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+		align-items: center;
+	}
+	@media (min-width: 640px) {
+		.final-cta-buttons {
+			flex-direction: row;
+			justify-content: center;
+		}
+	}
+</style>

@@ -1,0 +1,63 @@
+---
+import { reviews } from '../data/content';
+---
+
+<section class="section">
+	<header class="section-head">
+		<p class="eyebrow">Review pelanggan</p>
+		<h2>Apa kata mereka</h2>
+	</header>
+	<div class="reviews">
+		{reviews.map((r) => (
+			<article class="review">
+				<div class="stars" aria-label="5 dari 5 bintang">★★★★★</div>
+				<p class="review-text">“{r.text}”</p>
+				<footer class="review-meta">
+					<span class="review-name">{r.name}</span>
+					<span class="review-area">{r.area}</span>
+				</footer>
+			</article>
+		))}
+	</div>
+</section>
+
+<style>
+	.reviews {
+		display: grid;
+		gap: 12px;
+		grid-template-columns: 1fr;
+	}
+	.review {
+		padding: 22px;
+		border-radius: 14px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+	}
+	.stars {
+		color: #e3a52a;
+		letter-spacing: 2px;
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+	.review-text {
+		margin: 0 0 14px;
+		font-size: 15px;
+		line-height: 1.55;
+	}
+	.review-meta {
+		display: flex;
+		justify-content: space-between;
+		font-size: 13.5px;
+	}
+	.review-name {
+		font-weight: 600;
+	}
+	.review-area {
+		color: var(--muted);
+	}
+	@media (min-width: 640px) {
+		.reviews {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

@@ -30,9 +30,9 @@ export interface Faq {
 }
 
 export const situations: Situation[] = [
-	{ img: '/standar-kami.png', title: 'Baru Renovasi', body: 'Dibuangi debu, sisa semen, dan bekas cat hingga siap ditempati.', cta: 'Saya baru renovasi', msg: 'Halo Tentram, saya baru selesai renovasi rumah dan butuh pembersihan. Boleh minta penawaran?' },
+	{ img: '/renovasi.png', title: 'Baru Renovasi', body: 'Dibuangi debu, sisa semen, dan bekas cat hingga siap ditempati.', cta: 'Saya baru renovasi', msg: 'Halo Tentram, saya baru selesai renovasi rumah dan butuh pembersihan. Boleh minta penawaran?' },
 	{ img: '/airbnb-propertisewa.png', title: 'Baru Pindahan', body: 'Setiap sudut dibersihkan sebelum Anda mulai menempati.', cta: 'Saya baru pindahan', msg: 'Halo Tentram, saya baru pindah rumah dan ingin move in cleaning. Boleh minta penawaran?' },
-	{ img: '/hero-v3.png', title: 'Rumah Terasa Kotor', body: 'Tidak sempat membersihkan sendiri? Biarkan kami membantu.', cta: 'Saya butuh home cleaning', msg: 'Halo Tentram, saya butuh home cleaning untuk rumah saya. Boleh minta penawaran?' },
+	{ img: '/rumah.png', title: 'Rumah Terasa Kotor', body: 'Tidak sempat membersihkan sendiri? Biarkan kami membantu.', cta: 'Saya butuh home cleaning', msg: 'Halo Tentram, saya butuh home cleaning untuk rumah saya. Boleh minta penawaran?' },
 	{ img: '/kantor.png', title: 'Office Cleaning', body: 'Lingkungan kerja yang lebih nyaman untuk tim dan pelanggan.', cta: 'Saya butuh office cleaning', msg: 'Halo Tentram, kantor kami butuh cleaning rutin/berkala. Boleh minta penawaran?' },
 	{ img: '/deepcleantoilet.png', title: 'Deep Cleaning', body: 'Pembersihan menyeluruh hingga area yang jarang dibersihkan.', cta: 'Lihat deep cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Deep Cleaning. Boleh minta penawaran?' },
 	{ img: '/HydroCleaning.png', title: 'Hydro Cleaning', body: 'Cuci sofa, kasur, dan karpet dengan teknologi hydro extraction.', cta: 'Lihat hydro cleaning', msg: 'Halo Tentram, saya tertarik dengan layanan Hydro Cleaning (cuci sofa/kasur/karpet). Boleh minta penawaran?' },

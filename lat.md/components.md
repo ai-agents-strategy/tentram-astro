@@ -25,3 +25,9 @@ Icon is `src/components/icons/WhatsAppIcon.astro`, sized per placement (16px nav
 `src/layouts/Layout.astro` wraps every page with shared `<head>` tags: charset, viewport, favicon, description, and Open Graph / Twitter card meta.
 
 `og:image` and `twitter:image` point at `public/aman-dengan-dokumentasi.png`, resolved to an absolute URL via `new URL(path, Astro.url)` so link previews (WhatsApp, social shares) render the correct thumbnail.
+
+### Google Tag Manager
+
+GTM container `GTM-PXRLQC8G` is wired into `src/layouts/Layout.astro` following Google's required placement: the loader script immediately after the `<head>` opening tag, and the `<noscript>` fallback iframe immediately after `<body>` opens.
+
+The loader script uses Astro's `is:inline` directive so Astro ships it byte-for-byte instead of processing/bundling it as a module — required for the GTM snippet's IIFE to run as-is.

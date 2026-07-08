@@ -1,12 +1,16 @@
 /* Design tokens */
 :root {
-	--bg: #ffffff;
+	--bg: #faf7f5;
+	--bg-section: #f4efea;
 	--surface: #ffffff;
-	--line: #ececea;
-	--text: #16201b;
-	--muted: #6b766f;
-	--green: #0f8a5f;
-	--wa: #1faa56;
+	--line: #e8dfd7;
+	--text: #232323;
+	--muted: #5d5d5d;
+	--green: #7a1f2a;
+	--green-hover: #611822;
+	--gold: #c7a16a;
+	--wa: #25d366;
+	--wa-hover: #20bd5a;
 	--maxw: 980px;
 }
 
@@ -59,7 +63,7 @@ h2 {
 	color: #fff;
 }
 .btn-wa:hover {
-	background: #178a49;
+	background: var(--wa-hover);
 }
 .btn-outline {
 	border: 1.5px solid var(--line);

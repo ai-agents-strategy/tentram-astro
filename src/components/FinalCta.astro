@@ -1,5 +1,6 @@
 ---
 import { wa } from '../lib/whatsapp';
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 ---
 
 <section class="final-cta">
@@ -11,7 +12,8 @@ import { wa } from '../lib/whatsapp';
 	</p>
 	<div class="final-cta-buttons">
 		<a class="btn btn-wa btn-lg" href={wa('Halo Tentram, saya ingin mendapatkan penawaran gratis.')} target="_blank" rel="noopener">
-			Dapatkan Penawaran Gratis
+			<WhatsAppIcon />
+			WhatsApp Us
 		</a>
 		<a class="btn btn-outline btn-lg" href={wa('Halo Tentram, saya ingin chat via WhatsApp.')} target="_blank" rel="noopener">
 			Chat via WhatsApp

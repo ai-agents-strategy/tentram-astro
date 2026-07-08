@@ -1,6 +1,7 @@
 ---
 import { steps } from '../data/content';
 import { wa } from '../lib/whatsapp';
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 ---
 
 <section class="section">
@@ -20,7 +21,8 @@ import { wa } from '../lib/whatsapp';
 		))}
 	</ol>
 	<a class="btn btn-wa btn-lg center" href={wa('Halo Tentram, saya ingin booking layanan cleaning.')} target="_blank" rel="noopener">
-		Chat WhatsApp
+		<WhatsAppIcon />
+		WhatsApp Us
 	</a>
 </section>
 

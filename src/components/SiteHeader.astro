@@ -1,5 +1,6 @@
 ---
 import { wa } from '../lib/whatsapp';
+import WhatsAppIcon from './icons/WhatsAppIcon.astro';
 ---
 
 <header class="site-header">
@@ -13,7 +14,8 @@ import { wa } from '../lib/whatsapp';
 		<a href="#faq">FAQ</a>
 	</nav>
 	<a class="btn btn-wa nav-cta" href={wa('Halo Tentram, saya tertarik dengan layanan cleaning. Boleh minta penawaran gratis?')} target="_blank" rel="noopener">
-		WhatsApp
+		<WhatsAppIcon size={16} />
+		WhatsApp Us
 	</a>
 	<button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="mobileMenu" aria-label="Buka menu">
 		<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">

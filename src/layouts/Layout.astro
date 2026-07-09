@@ -19,6 +19,31 @@ import '../styles/global.css';
 			})(window, document, 'script', 'dataLayer', 'GTM-PXRLQC8G');
 		</script>
 		<!-- End Google Tag Manager -->
+
+		<!-- Google Ads: conversion tracking -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18308049507"></script>
+		<script is:inline>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'AW-18308049507');
+
+			function gtag_report_conversion(url) {
+				var callback = function () {
+					if (typeof url != 'undefined') {
+						window.location = url;
+					}
+				};
+				gtag('event', 'conversion', {
+					send_to: 'AW-18308049507/MDFHCPjhtc0cEOPU-plE',
+					event_callback: callback,
+				});
+				return false;
+			}
+		</script>
+		<!-- End Google Ads conversion tracking -->
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -56,6 +81,13 @@ import '../styles/global.css';
 		>
 		<!-- End Google Tag Manager (noscript) -->
 		<slot />
+
+		<script is:inline>
+			document.addEventListener('click', function (e) {
+				var link = e.target.closest('a[href*="wa.me"]');
+				if (link) gtag_report_conversion();
+			});
+		</script>
 	</body>
 </html>
 

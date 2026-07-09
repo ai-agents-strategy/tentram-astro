@@ -31,3 +31,9 @@ Icon is `src/components/icons/WhatsAppIcon.astro`, sized per placement (16px nav
 GTM container `GTM-PXRLQC8G` is wired into `src/layouts/Layout.astro` following Google's required placement: the loader script immediately after the `<head>` opening tag, and the `<noscript>` fallback iframe immediately after `<body>` opens.
 
 The loader script uses Astro's `is:inline` directive so Astro ships it byte-for-byte instead of processing/bundling it as a module — required for the GTM snippet's IIFE to run as-is.
+
+### Google Ads conversion tracking
+
+Clicking any outbound WhatsApp link fires a Google Ads conversion event (`AW-18308049507/MDFHCPjhtc0cEOPU-plE`), so ad spend can be attributed to WA leads.
+
+`src/layouts/Layout.astro` loads `gtag.js` and defines `gtag_report_conversion()` in `<head>` (Google's standard snippet, `is:inline` for the same reason as the GTM loader). A single delegated click listener at the end of `<body>` matches any `a[href*="wa.me"]` — this covers all [[lat.md/components#Components#WhatsApp CTAs]] without per-component wiring. Since every WA link uses `target="_blank"`, the conversion call is fired without a redirect URL — no `event_callback` navigation is needed because the new tab already opens natively.

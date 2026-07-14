@@ -1,0 +1,112 @@
+---
+// Shared app deep-link redirect page body: tries to open the mobile app via
+// its custom scheme, falls back to store download badges.
+// TODO: replace with the real store URLs once the app is published.
+const PLAY_URL = 'https://play.google.com/store/apps/details?id=id.co.tentram.app';
+const APPSTORE_URL = 'https://apps.apple.com/app/tentram/id0000000000';
+
+interface Props {
+	/** Custom scheme deep link, e.g. "tentram://reset-pin". */
+	appScheme: string;
+}
+
+const { appScheme } = Astro.props;
+---
+
+<main class="card">
+	<img class="logo" src="/logo-tentram.png" alt="Tentram" width="140" />
+	<h1>Unduh atau Buka Tentram</h1>
+	<p class="subtitle">
+		Klik tombol di bawah untuk membuka aplikasi atau unduh jika belum terpasang.
+	</p>
+	<div class="badges">
+		<a href={PLAY_URL} rel="noopener">
+			<img src="/googleplay.png" alt="Get it on Google Play" height="52" />
+		</a>
+		<a href={APPSTORE_URL} rel="noopener">
+			<img src="/appstore.png" alt="Download on the App Store" height="52" />
+		</a>
+	</div>
+	<p class="note">Aplikasi akan terbuka otomatis jika sudah terpasang</p>
+</main>
+
+<script is:inline define:vars={{ appScheme }}>
+	// Try to open the app via its custom scheme, forwarding any query
+	// params (e.g. the PIN token). If the app is not installed the
+	// navigation silently fails and the page stays visible.
+	window.location.href = appScheme + window.location.search;
+</script>
+
+<style is:global>
+	html,
+	body {
+		margin: 0;
+		min-height: 100%;
+	}
+
+	body {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		min-height: 100vh;
+		padding: 96px 16px 32px;
+		box-sizing: border-box;
+		background: #2b2b2b;
+		color: #d6dde4;
+		font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+			'Helvetica Neue', Arial, sans-serif;
+		-webkit-font-smoothing: antialiased;
+		text-align: center;
+	}
+</style>
+
+<style>
+	.card {
+		width: 100%;
+		max-width: 440px;
+		padding: 32px 28px;
+		border-radius: 16px;
+		background: #171717;
+	}
+
+	.logo {
+		display: block;
+		margin: 0 auto 8px;
+		max-width: 140px;
+		height: auto;
+	}
+
+	h1 {
+		margin: 0 0 12px;
+		font-size: 30px;
+		line-height: 1.2;
+		color: #7d97ad;
+	}
+
+	.subtitle {
+		margin: 0 0 24px;
+		font-size: 17px;
+		line-height: 1.6;
+		color: #b9c2cb;
+	}
+
+	.badges {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 14px;
+		margin-bottom: 20px;
+	}
+
+	.badges img {
+		display: block;
+		height: 52px;
+		width: auto;
+	}
+
+	.note {
+		margin: 0;
+		font-size: 14px;
+		color: #9aa3ac;
+	}
+</style>

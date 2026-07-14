@@ -20,6 +20,12 @@ All WA-branded buttons (`.btn-wa` and the floating `.wa-sticky`) share the label
 
 Icon is `src/components/icons/WhatsAppIcon.astro`, sized per placement (16px nav, 18px inline buttons, 26px floating sticky button). Used in `Hero.astro`, `FinalCta.astro` (primary button only — its secondary outline button keeps distinct "Chat via WhatsApp" copy), `BookingSteps.astro`, `SiteHeader.astro`, and `StickyWhatsApp.astro`.
 
+## App deep-link redirect pages
+
+`/register-pin` and `/reset-pin` are standalone dark landing pages for the mobile app: each tries to deep-link into the app and shows store download badges as fallback.
+
+Both pages (`src/pages/register-pin.astro`, `src/pages/reset-pin.astro`) are thin wrappers around the shared `src/components/AppRedirect.astro`, passing their deep link via the `appScheme` prop (`tentram://register-pin`, `tentram://reset-pin`). On load an inline script navigates to that custom scheme, forwarding the page's query string (e.g. the PIN token); if the app is not installed the navigation silently fails and the page stays visible. The component shows the Tentram logo, "Unduh atau Buka Tentram" heading, and Google Play / App Store badge links (`public/googleplay.png`, `public/appstore.png`). Store URLs are placeholder constants in the component frontmatter — swap them once the app is published. The pages are `noindex` and deliberately do not use [[lat.md/components#Components#Layout & SEO|the shared Layout]] (no GTM/Ads tracking, own dark styling).
+
 ## Layout & SEO
 
 `src/layouts/Layout.astro` wraps every page with shared `<head>` tags: charset, viewport, favicon, description, and Open Graph / Twitter card meta.

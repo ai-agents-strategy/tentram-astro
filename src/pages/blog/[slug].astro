@@ -1,0 +1,93 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
+
+export async function getStaticPaths() {
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+
+const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Layout title={`${post.data.title} — Tentram Blog`} description={post.data.description} ogImage={post.data.image}>
+	<main>
+		<SiteHeader />
+		<article class="post">
+			<p class="post-date">{dateFmt.format(post.data.pubDate)}</p>
+			<h1>{post.data.title}</h1>
+			{post.data.image && <img class="post-cover" src={post.data.image} alt="" />}
+			<div class="prose">
+				<Content />
+			</div>
+			<a class="link back-link" href="/blog/">← Kembali ke Blog</a>
+		</article>
+		<SiteFooter />
+	</main>
+	<StickyWhatsApp />
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		max-width: var(--maxw);
+		margin: 0 auto;
+		padding: 0 22px 90px;
+	}
+	.post {
+		max-width: 720px;
+		margin: 0 auto;
+		padding-top: 8px;
+	}
+	.post-date {
+		margin: 0 0 8px;
+		font-size: 13px;
+		color: var(--muted);
+	}
+	.post h1 {
+		margin: 0 0 20px;
+		font-size: 30px;
+		letter-spacing: -0.02em;
+		line-height: 1.22;
+		font-weight: 700;
+	}
+	.post-cover {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		border-radius: 14px;
+		margin-bottom: 28px;
+	}
+	.prose {
+		color: var(--text);
+		font-size: 16px;
+		line-height: 1.7;
+	}
+	.prose :global(h2) {
+		margin: 32px 0 12px;
+		font-size: 20px;
+		font-weight: 700;
+	}
+	.prose :global(p) {
+		margin: 0 0 16px;
+	}
+	.back-link {
+		display: inline-block;
+		margin-top: 24px;
+	}
+
+	@media (min-width: 640px) {
+		.post h1 {
+			font-size: 36px;
+		}
+	}
+</style>

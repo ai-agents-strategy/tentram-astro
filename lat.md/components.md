@@ -30,7 +30,7 @@ Both pages (`src/pages/register-pin.astro`, `src/pages/reset-pin.astro`) are thi
 
 `src/layouts/Layout.astro` wraps every page with shared `<head>` tags: charset, viewport, favicon, description, and Open Graph / Twitter card meta.
 
-`og:image` and `twitter:image` point at `public/aman-dengan-dokumentasi.png`, resolved to an absolute URL via `new URL(path, Astro.url)` so link previews (WhatsApp, social shares) render the correct thumbnail.
+`title`, `description`, and `ogImage` are optional props on the layout, defaulting to the homepage's copy and `/aman-dengan-dokumentasi.png` — pages like [[lat.md/blog#Blog]] override them per-page. `og:image`/`twitter:image` are resolved to an absolute URL via `new URL(ogImage, Astro.url)` so link previews (WhatsApp, social shares) render the correct thumbnail.
 
 ### Google Tag Manager
 

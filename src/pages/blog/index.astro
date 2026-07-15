@@ -1,0 +1,126 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+
+const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+
+<Layout
+	title="Blog Tentram — Tips & Panduan Cleaning"
+	description="Artikel seputar perawatan rumah, kantor, dan tips cleaning dari tim Tentram."
+>
+	<main>
+		<SiteHeader />
+		<section class="blog-hero">
+			<p class="eyebrow">Blog</p>
+			<h1>Tips &amp; Panduan Cleaning</h1>
+			<p class="lede">Artikel seputar perawatan rumah, apartemen, dan kantor dari tim Tentram.</p>
+		</section>
+
+		<section class="blog-grid">
+			{posts.map((post) => (
+				<a class="post-card" href={`/blog/${post.id}/`}>
+					{post.data.image && <img src={post.data.image} alt="" loading="lazy" />}
+					<div class="post-card-body">
+						<p class="post-date">{dateFmt.format(post.data.pubDate)}</p>
+						<h2>{post.data.title}</h2>
+						<p class="post-desc">{post.data.description}</p>
+					</div>
+				</a>
+			))}
+		</section>
+		<SiteFooter />
+	</main>
+	<StickyWhatsApp />
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		max-width: var(--maxw);
+		margin: 0 auto;
+		padding: 0 22px 90px;
+	}
+	.blog-hero {
+		text-align: center;
+		max-width: 560px;
+		margin: 40px auto 36px;
+	}
+	.blog-hero h1 {
+		margin: 0;
+		font-size: 32px;
+		letter-spacing: -0.02em;
+		line-height: 1.18;
+		font-weight: 700;
+	}
+	.lede {
+		margin: 12px 0 0;
+		color: var(--muted);
+		font-size: 16px;
+	}
+	.blog-grid {
+		display: grid;
+		gap: 22px;
+		grid-template-columns: 1fr;
+	}
+	.post-card {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		overflow: hidden;
+		background: var(--surface);
+		transition: transform 0.15s ease, border-color 0.18s ease;
+	}
+	.post-card:hover {
+		transform: translateY(-2px);
+		border-color: var(--green);
+	}
+	.post-card img {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		display: block;
+	}
+	.post-card-body {
+		padding: 18px 20px 22px;
+	}
+	.post-date {
+		margin: 0 0 8px;
+		font-size: 13px;
+		color: var(--muted);
+	}
+	.post-card-body h2 {
+		margin: 0 0 8px;
+		font-size: 19px;
+		line-height: 1.3;
+	}
+	.post-desc {
+		margin: 0;
+		color: var(--muted);
+		font-size: 14.5px;
+		line-height: 1.5;
+	}
+
+	@media (min-width: 640px) {
+		.blog-hero h1 {
+			font-size: 38px;
+		}
+		.blog-grid {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 900px) {
+		.blog-grid {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

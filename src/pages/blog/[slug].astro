@@ -4,6 +4,8 @@ import Layout from '../../layouts/Layout.astro';
 import SiteHeader from '../../components/SiteHeader.astro';
 import SiteFooter from '../../components/SiteFooter.astro';
 import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
+import WhatsAppIcon from '../../components/icons/WhatsAppIcon.astro';
+import { wa } from '../../lib/whatsapp';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -28,6 +30,13 @@ const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long'
 			{post.data.image && <img class="post-cover" src={post.data.image} alt="" />}
 			<div class="prose">
 				<Content />
+			</div>
+			<div class="post-cta">
+				<p class="post-cta-lead">Butuh bantuan cleaning untuk rumah, apartemen, atau kantor?</p>
+				<a class="btn btn-wa" href={wa(`Halo Tentram, saya baca artikel "${post.data.title}". Boleh konsultasi kebutuhan cleaning saya?`)} target="_blank" rel="noopener">
+					<WhatsAppIcon size={18} />
+					Konsultasi via WhatsApp
+				</a>
 			</div>
 			<a class="link back-link" href="/blog/">← Kembali ke Blog</a>
 		</article>
@@ -83,6 +92,35 @@ const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long'
 	.back-link {
 		display: inline-block;
 		margin-top: 24px;
+	}
+
+	.post-cta {
+		margin-top: 36px;
+		padding: 22px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		text-align: center;
+	}
+	.post-cta-lead {
+		margin: 0 0 14px;
+		font-size: 15px;
+		color: var(--muted);
+	}
+	.post-cta .btn-wa {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+		padding: 12px 20px;
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 999px;
+		background: var(--green);
+		color: #fff;
+		text-decoration: none;
+	}
+	.post-cta .btn-wa:hover {
+		background: #20bd5a;
 	}
 
 	@media (min-width: 640px) {

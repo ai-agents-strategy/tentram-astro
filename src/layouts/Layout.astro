@@ -5,13 +5,19 @@ interface Props {
 	title?: string;
 	description?: string;
 	ogImage?: string;
+	canonical?: string;
+	noindex?: boolean;
 }
 
 const {
 	title = 'Tentram — Rumah Bersih Tanpa Ribet',
 	description = 'Tentram — cleaning profesional untuk rumah, apartemen, dan kantor. Post renovation, move in, home cleaning, deep cleaning, & office cleaning. Dapatkan penawaran gratis via WhatsApp.',
 	ogImage = '/aman-dengan-dokumentasi.png',
+	canonical,
+	noindex = false,
 } = Astro.props;
+
+const canonicalUrl = canonical ? new URL(canonical, Astro.site ?? 'https://tentram.id/') : new URL(Astro.url.pathname, Astro.site ?? 'https://tentram.id/');
 ---
 
 <!doctype html>
@@ -64,14 +70,64 @@ const {
 		<meta name="description" content={description} />
 		<title>{title}</title>
 
+		<link rel="canonical" href={canonicalUrl} />
+		{noindex && <meta name="robots" content="noindex, nofollow" />}
+
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content={title} />
 		<meta property="og:description" content={description} />
 		<meta property="og:image" content={new URL(ogImage, Astro.url)} />
-		<meta name="twitter:card" content="summary_large_image" />
+		<!-- Schema.org LocalBusiness + Service -->
+		<script type="application/ld+json" set:html={JSON.stringify({
+			'@context': 'https://schema.org',
+			'@graph': [
+				{
+					'@type': 'LocalBusiness',
+					'@id': 'https://tentram.id/#business',
+					name: 'Tentram Cleaning Service',
+					url: 'https://tentram.id/',
+					telephone: '+62-877-9050-7560',
+					email: 'tentramcleaning@gmail.com',
+					image: 'https://tentram.id/aman-dengan-dokumentasi.png',
+					description,
+					address: {
+						'@type': 'PostalAddress',
+						addressLocality: 'Jakarta',
+						addressRegion: 'DKI Jakarta',
+						addressCountry: 'ID',
+					},
+					areaServed: [
+						{ '@type': 'City', name: 'Jakarta' },
+						{ '@type': 'City', name: 'BSD' },
+						{ '@type': 'City', name: 'Alam Sutera' },
+						{ '@type': 'City', name: 'Gading Serpong' },
+						{ '@type': 'City', name: 'Bekasi' },
+						{ '@type': 'City', name: 'Depok' },
+						{ '@type': 'City', name: 'Tangerang' },
+					],
+					sameAs: [
+						'https://www.instagram.com/tentramcleaning/',
+					],
+					priceRange: '$$',
+				},
+				{
+					'@type': 'WebSite',
+					'@id': 'https://tentram.id/#website',
+					url: 'https://tentram.id/',
+					name: 'Tentram Cleaning Service',
+					publisher: { '@id': 'https://tentram.id/#business' },
+					potentialAction: {
+						'@type': 'SearchAction',
+						target: 'https://tentram.id/blog/?search={search_term_string}',
+						'query-input': 'required name=search_term_string',
+					},
+				},
+			],
+		})} />
 		<meta name="twitter:title" content={title} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={new URL(ogImage, Astro.url)} />
+		<meta name="twitter:card" content="summary_large_image" />
 	</head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->

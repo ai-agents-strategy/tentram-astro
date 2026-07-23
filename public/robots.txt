@@ -4,3 +4,4 @@ Disallow: /register-pin/
 Disallow: /reset-pin/
 
 Sitemap: https://tentram.id/sitemap.xml
+Host: https://tentram.id

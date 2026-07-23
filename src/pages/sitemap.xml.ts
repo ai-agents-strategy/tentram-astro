@@ -1,19 +1,27 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
 
+function formatDate(d: Date): string {
+	return d.toISOString().split('T')[0] ?? d.toISOString();
+}
+
 export const GET: APIRoute = async ({ site }) => {
 	const posts = (await getCollection('blog')).sort(
 		(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
 	);
 
 	const routes = [
-		'/',
-		'/blog/',
-		'/register-pin/',
-		'/reset-pin/',
+		{ path: '/', priority: '1.0', changefreq: 'weekly' },
+		{ path: '/blog/', priority: '0.8', changefreq: 'weekly' },
 	];
 
-	const blogPostUrls = posts.map((post) => `/blog/${post.id}/`);
+	const blogPostUrls = posts.map((post) => ({
+		path: `/blog/${post.id}/`,
+		lastmod: formatDate(post.data.pubDate),
+		priority: '0.7',
+		changefreq: 'monthly',
+	}));
+
 	const allUrls = [...routes, ...blogPostUrls];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
@@ -21,7 +29,9 @@ export const GET: APIRoute = async ({ site }) => {
 ${allUrls
 		.map(
 			(url) => `	<url>
-		<loc>${new URL(url, site).toString()}</loc>
+		<loc>${new URL(url.path, site).toString()}</loc>${url.lastmod ? `\n		<lastmod>${url.lastmod}</lastmod>` : ''}
+		<priority>${url.priority}</priority>
+		<changefreq>${url.changefreq}</changefreq>
 	</url>`
 		)
 		.join('\n')}

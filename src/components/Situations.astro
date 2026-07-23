@@ -18,7 +18,11 @@ import { wa } from '../lib/whatsapp';
 				<div class="card-body">
 					<h3>{s.title}</h3>
 					<p>{s.body}</p>
-					<a class="card-link" href={wa(s.msg)} target="_blank" rel="noopener">{s.cta} →</a>
+					{s.slug ? (
+						<a class="card-link" href={`/layanan/${s.slug}/`}>Pelajari layanan →</a>
+					) : (
+						<a class="card-link" href={wa(s.msg)} target="_blank" rel="noopener">{s.cta} →</a>
+					)}
 				</div>
 			</article>
 		))}

@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import { getCollection } from 'astro:content';
+import { services } from '../data/content';
 
 function formatDate(d: Date): string {
 	return d.toISOString().split('T')[0] ?? d.toISOString();
@@ -13,7 +14,14 @@ export const GET: APIRoute = async ({ site }) => {
 	const routes = [
 		{ path: '/', priority: '1.0', changefreq: 'weekly' },
 		{ path: '/blog/', priority: '0.8', changefreq: 'weekly' },
+		{ path: '/layanan/', priority: '0.9', changefreq: 'weekly' },
 	];
+
+	const serviceUrls = services.map((s) => ({
+		path: `/layanan/${s.slug}/`,
+		priority: '0.8',
+		changefreq: 'monthly',
+	}));
 
 	const blogPostUrls = posts.map((post) => ({
 		path: `/blog/${post.id}/`,
@@ -22,7 +30,7 @@ export const GET: APIRoute = async ({ site }) => {
 		changefreq: 'monthly',
 	}));
 
-	const allUrls = [...routes, ...blogPostUrls];
+	const allUrls: { path: string; priority: string; changefreq: string; lastmod?: string }[] = [...routes, ...serviceUrls, ...blogPostUrls];
 
 	const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">

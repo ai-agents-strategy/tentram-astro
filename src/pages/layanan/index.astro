@@ -1,0 +1,123 @@
+---
+import { services } from '../../data/content';
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
+---
+
+<Layout
+	title="Layanan Cleaning Tentram — Jakarta, BSD, Tangerang"
+	description="Jasa home cleaning, deep cleaning, office cleaning, after renovation, move in, hydro cleaning, cuci AC, dan cleaning kamar mandi untuk rumah, apartemen, dan kantor."
+	canonical="/layanan/"
+>
+	<main>
+		<SiteHeader />
+
+		<section class="services-hero">
+			<p class="eyebrow">Layanan Kami</p>
+			<h1>Cleaning Service untuk Setiap Kebutuhan</h1>
+			<p class="lede">Dari rumah harian hingga pembersihan pasca renovasi. Pilih layanan yang sesuai dengan situasi Anda.</p>
+		</section>
+
+		<section class="services-list">
+			{services.map((s) => (
+				<article class="service-card">
+					<img src={s.image} alt={s.title} loading="lazy" />
+					<div class="service-card-body">
+						<h2>{s.title}</h2>
+						<p>{s.description}</p>
+						<a class="card-link" href={`/layanan/${s.slug}/`}>Pelajari layanan →</a>
+					</div>
+				</article>
+			))}
+		</section>
+
+		<SiteFooter />
+	</main>
+	<StickyWhatsApp />
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		max-width: var(--maxw);
+		margin: 0 auto;
+		padding: 0 22px 90px;
+	}
+	.services-hero {
+		text-align: center;
+		max-width: 640px;
+		margin: 40px auto 36px;
+	}
+	.services-hero h1 {
+		margin: 0;
+		font-size: 32px;
+		letter-spacing: -0.02em;
+		line-height: 1.18;
+		font-weight: 700;
+	}
+	.lede {
+		margin: 14px 0 0;
+		color: var(--muted);
+		font-size: 16px;
+	}
+	.services-list {
+		display: grid;
+		gap: 22px;
+		grid-template-columns: 1fr;
+	}
+	.service-card {
+		display: flex;
+		flex-direction: column;
+		border: 1px solid var(--line);
+		border-radius: 14px;
+		overflow: hidden;
+		background: var(--surface);
+		transition: transform 0.15s ease, border-color 0.18s ease;
+	}
+	.service-card:hover {
+		transform: translateY(-2px);
+		border-color: var(--green);
+	}
+	.service-card img {
+		width: 100%;
+		aspect-ratio: 16 / 9;
+		object-fit: cover;
+		display: block;
+	}
+	.service-card-body {
+		padding: 18px 20px 22px;
+	}
+	.service-card-body h2 {
+		margin: 0 0 8px;
+		font-size: 19px;
+		line-height: 1.3;
+	}
+	.service-card-body p {
+		margin: 0 0 14px;
+		color: var(--muted);
+		font-size: 14.5px;
+		line-height: 1.5;
+	}
+	.card-link {
+		color: var(--green);
+		font-weight: 600;
+		font-size: 14.5px;
+	}
+
+	@media (min-width: 640px) {
+		.services-hero h1 {
+			font-size: 38px;
+		}
+		.services-list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: 900px) {
+		.services-list {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+</style>

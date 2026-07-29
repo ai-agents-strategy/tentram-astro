@@ -10,6 +10,7 @@ export interface Service {
 	notIncludes?: string[];
 	faq: Faq[];
 	ctaMsg: string;
+	tnc?: string[];
 }
 
 export interface Situation {
@@ -175,6 +176,20 @@ export const services: Service[] = [
 			{ q: 'Berapa lama prosesnya?', a: 'Rumah standar biasanya 4–8 jam. Luas dan kondisi menentukan estimasi.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Deep Cleaning untuk rumah/apartemen saya. Boleh minta penawaran?',
+		tnc: [
+			'Deep Cleaning adalah pembersihan menyeluruh dan mendetail (khususnya bagian dalam ruangan). Diperuntukkan bagi bangunan yang akan ditempati (move in/move out), selesai renovasi, dan gudang.',
+			'Jam operasional Deep Cleaning: 09:00 – 19:00 WIB.',
+			'Luas bangunan minimal 35 m². Untuk luas di bawah 35 m² berlaku penyesuaian harga.',
+			'Pengerjaan baru dilakukan setelah customer membayar DP sebesar 50%.',
+			'Untuk luas bangunan >150 m² dikenakan biaya survey sebesar Rp50.000.',
+			'Customer WAJIB memberikan informasi: luas bangunan per lantai, jumlah tingkatan lantai, dan video detail setiap area yang akan di-deep cleaning.',
+			'Dalam satu lokasi tidak boleh ada pengerjaan lain yang bersamaan, karena akan mengganggu hasil pembersihan.',
+			'Cakupan area: Ruang Tamu, Kamar Tidur, Dapur, Gudang, Tangga, Furniture, Pintu/Jendela/Kaca, Kamar Mandi, Balkon.',
+			'Yang TIDAK termasuk cakupan: pembersihan ketinggian tanpa alat safety, memindahkan barang berat, perbaikan furniture/rusak, taman dan area parkir dengan jet spray, lantai marmer dan granit.',
+			'Pengerjaan menggunakan cairan pembersih dan alat khusus dari Tentram. Jika customer menggunakan chemical sendiri, Tentram tidak bertanggung jawab atas kerusakan.',
+			'Customer wajib melakukan pengecekan setelah petugas selesai, untuk memastikan sesuai orderan dan mengantisipasi komplain.',
+			'Pemesanan langsung kepada petugas tanpa melalui Tentram tidak dapat diklaim dan Tentram tidak bertanggung jawab.',
+		],
 	},
 	{
 		slug: 'hydro-cleaning',

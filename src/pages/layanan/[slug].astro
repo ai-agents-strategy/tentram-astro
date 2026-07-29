@@ -130,15 +130,23 @@ const schema = {
 
 		<section class="section tnc">
 			<h2 class="section-title">Syarat dan ketentuan</h2>
-			<ul class="tnc-list">
-				<li>Harga final ditentukan setelah survey atau informasi detail area, kondisi, dan kebutuhan diterima.</li>
-				<li>Booking dikonfirmasi setelah jadwal dan estimasi disetujui kedua belah pihak.</li>
-				<li>Reschedule dapat dilakukan minimal H-1 sebelum jadwal yang disepakati.</li>
-				<li>Pembatalan di hari H dikenakan biaya sesuai kebijakan operasional kami.</li>
-				<li>Area yang belum dijelaskan saat booking dapat menambah waktu dan biaya.</li>
-				<li>Kerusakan yang sudah ada sebelum cleaning bukan tanggung jawab Tentram.</li>
-				<li>Setiap layanan mengikuti quality checklist. Keluhan setelah serah terima harap disampaikan dalam 24 jam.</li>
-			</ul>
+			{service.tnc ? (
+				<ul class="tnc-list">
+					{service.tnc.map((item) => (
+						<li>{item}</li>
+					))}
+				</ul>
+			) : (
+				<ul class="tnc-list">
+					<li>Harga final ditentukan setelah survey atau informasi detail area, kondisi, dan kebutuhan diterima.</li>
+					<li>Booking dikonfirmasi setelah jadwal dan estimasi disetujui kedua belah pihak.</li>
+					<li>Reschedule dapat dilakukan minimal H-1 sebelum jadwal yang disepakati.</li>
+					<li>Pembatalan di hari H dikenakan biaya sesuai kebijakan operasional kami.</li>
+					<li>Area yang belum dijelaskan saat booking dapat menambah waktu dan biaya.</li>
+					<li>Kerusakan yang sudah ada sebelum cleaning bukan tanggung jawab Tentram.</li>
+					<li>Setiap layanan mengikuti quality checklist. Keluhan setelah serah terima harap disampaikan dalam 24 jam.</li>
+				</ul>
+			)}
 		</section>
 
 		<section class="final-cta">

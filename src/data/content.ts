@@ -5,12 +5,16 @@ export interface Service {
 	description: string;
 	image: string;
 	body: string;
+	useCases?: { title: string; desc: string }[];
+	areas?: string[];
 	includes: string[];
 	addOns?: string[];
 	notIncludes?: string[];
+	requirements?: string[];
 	faq: Faq[];
 	ctaMsg: string;
 	tnc?: string[];
+	internalLinks?: { label: string; href: string }[];
 }
 
 export interface Situation {
@@ -154,10 +158,16 @@ export const services: Service[] = [
 	{
 		slug: 'deep-cleaning',
 		title: 'Deep Cleaning',
-		headline: 'Pembersihan Menyeluruh untuk Rumah yang Terlupakan',
-		description: 'Deep cleaning membersihkan area yang jarang tersentuh cleaning rutin: debu di balik lemari, kerak kamar mandi, noda dinding, dan lainnya.',
+		headline: 'Pembersihan Menyeluruh untuk Rumah yang Siap Ditempati',
+		description: 'Deep cleaning menyeluruh untuk pindahan, renovasi, dan gudang. Tim profesional Tentram bersihkan area yang terlewat: kerak kamar mandi, debu balik furniture, noda dinding.',
 		image: '/deepcleantoilet.png',
-		body: 'Deep cleaning adalah pembersihan menyeluruh yang menjangkau area yang tidak terjangkau oleh cleaning rutin. Kami membersihkan debu di balik dan bawah furniture, kerak dan jamur di kamar mandi, noda di dinding dan kusen, serta area lain yang sering terlewat. Rekomendasi dilakukan setiap 3–6 bulan.',
+		body: 'Deep cleaning adalah pembersihan menyeluruh dan mendetail, khususnya bagian dalam ruangan. Berbeda dari cleaning rutin yang hanya merawat permukaan, deep cleaning menjangkau area yang jarang tersentuh — debu di balik dan bawah furniture, kerak serta jamur di kamar mandi, noda di dinding dan kusen, hingga sudut-sudut yang terlewat.',
+		useCases: [
+			{ title: '🏠 Pindahan (Move In / Move Out)', desc: 'Rumah baru atau lama perlu dibersihkan menyeluruh sebelum ditempati. Kami pastikan setiap sudut siap huni.' },
+			{ title: '🔨 Selesai Renovasi', desc: 'Debu renovasi menempel di mana-mana — langit-langit, balok jendela, celah keramik. Deep cleaning hilangkan semua jejak.' },
+			{ title: '📦 Cleaning Gudang', desc: 'Gudang yang berdebu dan berantakan mengganggu produktivitas. Kami bersihkan dari atas hingga bawah.' },
+		],
+		areas: ['Ruang Tamu', 'Kamar Tidur', 'Dapur', 'Gudang', 'Tangga', 'Furniture', 'Pintu, Jendela & Kaca', 'Kamar Mandi', 'Balkon'],
 		includes: [
 			'Pembersihan detail area tersembunyi',
 			'Pembersihan kerak dan jamur kamar mandi',
@@ -170,10 +180,29 @@ export const services: Service[] = [
 			'Cuci AC',
 			'Disinfection fogging',
 		],
+		notIncludes: [
+			'Pembersihan ketinggian tanpa alat safety',
+			'Memindahkan barang-barang berat',
+			'Perbaikan furniture atau komponen yang rusak',
+			'Taman dan area parkir dengan jet spray',
+			'Lantai marmer dan granit',
+		],
+		requirements: [
+			'Luas bangunan minimal 35 m² (di bawah 35 m² penyesuaian harga)',
+			'Informasi luas bangunan per lantai',
+			'Jumlah tingkatan lantai yang akan di-deep cleaning',
+			'Video detail setiap area yang akan dibersihkan',
+			'DP 50% sebelum pengerjaan dimulai',
+		],
 		faq: [
-			{ q: 'Apa bedanya deep cleaning dan home cleaning?', a: 'Home cleaning merawat kebersihan harian. Deep cleaning membersihkan detail menyeluruh area yang terlewat.' },
-			{ q: 'Seberapa sering harus deep cleaning?', a: 'Rekomendasi 3–6 bulan sekali, atau sebelum acara penting setelah renovasi.' },
-			{ q: 'Berapa lama prosesnya?', a: 'Rumah standar biasanya 4–8 jam. Luas dan kondisi menentukan estimasi.' },
+			{ q: 'Apa bedanya deep cleaning dan home cleaning?', a: 'Home cleaning merawat kebersihan harian atau berkala. Deep cleaning adalah pembersihan menyeluruh dan mendetail — menjangkau area yang tidak terjangkau oleh cleaning rutin, seperti balik furniture, celah keramik, dan langit-langit.' },
+			{ q: 'Kapan saya butuh deep cleaning?', a: 'Saat pindah rumah (move in/move out), setelah renovasi, atau saat gudang perlu dibersihkan menyeluruh. Bukan untuk kebersihan harian.' },
+			{ q: 'Seberapa sering harus deep cleaning?', a: 'Tidak seperti cleaning rutin, deep cleaning dilakukan sesuai kebutuhan — saat pindahan, renovasi, atau kondisi bangunan sudah sangat kotor. Bukan jadwal bulanan.' },
+			{ q: 'Berapa lama prosesnya?', a: 'Rumah standar biasanya 4–8 jam. Luas bangunan dan tingkat kekotoran menentukan estimasi waktu.' },
+			{ q: 'Apakah ada minimal luas bangunan?', a: 'Ya, minimal 35 m². Untuk bangunan di bawah 35 m² berlaku penyesuaian harga. Untuk bangunan >150 m² dikenakan biaya survey Rp50.000.' },
+			{ q: 'Apa yang perlu saya siapkan sebelum pengerjaan?', a: 'Informasi luas bangunan per lantai, jumlah lantai, dan video detail area yang akan dibersihkan. Also pastikan tidak ada pengerjaan lain yang berjalan bersamaan di lokasi yang sama.' },
+			{ q: 'Area mana saja yang masuk cakupan?', a: 'Ruang Tamu, Kamar Tidur, Dapur, Gudang, Tangga, Furniture, Pintu/Jendela/Kaca, Kamar Mandi, dan Balkon.' },
+			{ q: 'Apa yang tidak termasuk dalam deep cleaning?', a: 'Pembersihan ketinggian tanpa alat safety, memindahkan barang berat, perbaikan furniture, taman/area parkir dengan jet spray, serta lantai marmer dan granit.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Deep Cleaning untuk rumah/apartemen saya. Boleh minta penawaran?',
 		tnc: [
@@ -189,6 +218,11 @@ export const services: Service[] = [
 			'Pengerjaan menggunakan cairan pembersih dan alat khusus dari Tentram. Jika customer menggunakan chemical sendiri, Tentram tidak bertanggung jawab atas kerusakan.',
 			'Customer wajib melakukan pengecekan setelah petugas selesai, untuk memastikan sesuai orderan dan mengantisipasi komplain.',
 			'Pemesanan langsung kepada petugas tanpa melalui Tentram tidak dapat diklaim dan Tentram tidak bertanggung jawab.',
+		],
+		internalLinks: [
+			{ label: 'Perbedaan Deep Cleaning vs Home Cleaning', href: '/blog/home-cleaning-vs-deep-cleaning/' },
+			{ label: 'Tips Pindahan Rumah Bersih', href: '/blog/tips-pindahan-rumah-bersih/' },
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
 		],
 	},
 	{

@@ -39,3 +39,5 @@ Waktu ideal adalah setelah renovasi atau perbaikan selesai, tetapi sebelum furni
 Kami melayani move in cleaning untuk Jakarta Selatan, Jakarta Barat, Jakarta Utara, Jakarta Timur, BSD City, Gading Serpong, Alam Sutera, Bintaro, Tangerang, dan Bekasi.
 
 Siap pindah rumah dan ingin rumah baru bersih sebelum barang masuk? Chat tim Tentram untuk penawaran move in cleaning.
+
+Baca juga: [Apa Itu Deep Cleaning?](/blog/apa-itu-deep-cleaning/) | [Kenapa Harus Pakai Home Cleaning Service?](/blog/kenapa-harus-pakai-home-cleaning-service/)

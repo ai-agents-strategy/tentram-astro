@@ -3,6 +3,7 @@ title: 'Kapan Waktu yang Tepat untuk Deep Cleaning?'
 description: 'Deep cleaning berbeda dengan cleaning rutin. Kenali tanda-tanda rumah Anda sudah butuh pembersihan menyeluruh.'
 pubDate: 2026-06-15
 image: '/deepcleantoilet.png'
+imageAlt: 'Kapan waktu yang tepat untuk deep cleaning'
 tags: ['deep-cleaning', 'tips']
 ---
 

@@ -27,7 +27,7 @@ const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long'
 		<article class="post">
 			<p class="post-date">{dateFmt.format(post.data.pubDate)}</p>
 			<h1>{post.data.title}</h1>
-			{post.data.image && <img class="post-cover" src={post.data.image} alt="" />}
+			{post.data.image && <img class="post-cover" src={post.data.image} alt={post.data.imageAlt || post.data.title} />}
 			<div class="prose">
 				<Content />
 			</div>

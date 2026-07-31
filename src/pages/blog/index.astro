@@ -27,7 +27,7 @@ const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long'
 		<section class="blog-grid">
 			{posts.map((post) => (
 				<a class="post-card" href={`/blog/${post.id}/`}>
-					{post.data.image && <img src={post.data.image} alt="" loading="lazy" />}
+					{post.data.image && <img src={post.data.image} alt={post.data.imageAlt || post.data.title} loading="lazy" />}
 					<div class="post-card-body">
 						<p class="post-date">{dateFmt.format(post.data.pubDate)}</p>
 						<h2>{post.data.title}</h2>

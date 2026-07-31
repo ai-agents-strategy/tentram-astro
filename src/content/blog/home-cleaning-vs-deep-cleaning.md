@@ -3,6 +3,7 @@ title: 'Home Cleaning vs Deep Cleaning: Mana yang Rumah Anda Butuhkan?'
 description: 'Bingung memilih home cleaning atau deep cleaning? Pelajari perbedaannya, kapan masing-masing dibutuhkan, dan biaya yang sesuai untuk kondisi rumah Anda.'
 pubDate: 2026-07-24
 image: '/rumah.png'
+imageAlt: 'Perbandingan home cleaning dan deep cleaning'
 tags: ['home-cleaning', 'deep-cleaning', 'tips']
 ---
 

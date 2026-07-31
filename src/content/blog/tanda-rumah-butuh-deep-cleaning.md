@@ -3,6 +3,8 @@ title: "7 Tanda Rumah Anda Butuh Deep Cleaning Sekarang"
 description: "Jangan tunggu rumah makin kotor. Kenali 7 tanda yang menunjukkan rumah atau apartemen Anda sudah waktunya deep cleaning."
 pubDate: 2026-07-29
 tags: ["deep-cleaning", "tips"]
+image: '/tanda-rumah-butuh-deep-cleaning.jpg'
+imageAlt: 'Tanda rumah membutuhkan deep cleaning'
 ---
 
 Pernah tidak Anda merasa rumah sudah dibersihkan, tapi tetap ada sesuatu yang kurang? Mungkin ada bau samar yang tidak bisa hilang, atau noda di kamar mandi yang sudah dicoba berulang kali. Kadang masalahnya bukan kemalasan — tapi memang sudah waktunya deep cleaning.

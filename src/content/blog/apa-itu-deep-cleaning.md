@@ -1,5 +1,7 @@
 ---
 title: "Apa Itu Deep Cleaning? Panduan Lengkap untuk Pemilik Rumah"
+image: '/apa-itu-deep-cleaning.jpg'
+imageAlt: 'Ilustrasi deep cleaning rumah membersihkan area yang jarang terjangkau'
 description: "Pelajari apa itu deep cleaning, bagaimana prosesnya, dan kapan rumah Anda benar-benar membutuhkannya. Panduan lengkap dari tim Tentram Cleaning Service."
 pubDate: 2026-07-28
 tags: ["deep-cleaning", "panduan"]

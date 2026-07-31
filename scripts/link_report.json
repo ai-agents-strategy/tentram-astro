@@ -1,0 +1,916 @@
+{
+  "summary": {
+    "total_pages": 24,
+    "total_links": 309,
+    "broken_status": 0,
+    "pages_with_issues": 24
+  },
+  "pages": {
+    "/layanan/cleaning-kamar-mandi": {
+      "url": "https://tentram.id/layanan/cleaning-kamar-mandi",
+      "title": "Cleaning Kamar Mandi",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/merawat-sofa-karpet-hydro-cleaning": {
+      "url": "https://tentram.id/blog/merawat-sofa-karpet-hydro-cleaning",
+      "title": "Merawat Sofa Karpet Hydro Cleaning",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/kenapa-harus-pakai-home-cleaning-service": {
+      "url": "https://tentram.id/blog/kenapa-harus-pakai-home-cleaning-service",
+      "title": "Kenapa Harus Pakai Home Cleaning Service",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/layanan/home-cleaning",
+        "/layanan/deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/home-cleaning-vs-deep-cleaning": {
+      "url": "https://tentram.id/blog/home-cleaning-vs-deep-cleaning",
+      "title": "Home Cleaning Vs Deep Cleaning",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/layanan/deep-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/dampak-rumah-kotor-untuk-kesehatan": {
+      "url": "https://tentram.id/blog/dampak-rumah-kotor-untuk-kesehatan",
+      "title": "Dampak Rumah Kotor Untuk Kesehatan",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/layanan/home-cleaning",
+        "/layanan/deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog",
+        "/blog/kenapa-harus-pakai-home-cleaning-service"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/apa-itu-deep-cleaning": {
+      "url": "https://tentram.id/blog/apa-itu-deep-cleaning",
+      "title": "Apa Itu Deep Cleaning",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/layanan/deep-cleaning",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog/tips-pindahan-rumah-bersih",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/home-cleaning": {
+      "url": "https://tentram.id/layanan/home-cleaning",
+      "title": "Home Cleaning",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/layanan",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/home-cleaning-service-jakarta-apa-yang-dapat": {
+      "url": "https://tentram.id/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+      "title": "Home Cleaning Service Jakarta Apa Yang Dapat",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/layanan",
+        "/layanan/home-cleaning",
+        "/layanan/deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/cuci-ac": {
+      "url": "https://tentram.id/layanan/cuci-ac",
+      "title": "Cuci Ac",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/office-cleaning": {
+      "url": "https://tentram.id/layanan/office-cleaning",
+      "title": "Office Cleaning",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/tanda-rumah-butuh-deep-cleaning": {
+      "url": "https://tentram.id/blog/tanda-rumah-butuh-deep-cleaning",
+      "title": "Tanda Rumah Butuh Deep Cleaning",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/layanan/deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/deep-cleaning": {
+      "url": "https://tentram.id/layanan/deep-cleaning",
+      "title": "Deep Cleaning",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/blog/apa-itu-deep-cleaning",
+        "/layanan",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/cleaning-gudang": {
+      "url": "https://tentram.id/layanan/cleaning-gudang",
+      "title": "Cleaning Gudang",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/tips-pindahan-rumah-bersih": {
+      "url": "https://tentram.id/blog/tips-pindahan-rumah-bersih",
+      "title": "Tips Pindahan Rumah Bersih",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/layanan",
+        "/blog/apa-itu-deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/layanan/deep-cleaning",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/5-tips-rumah-bersih-setelah-renovasi": {
+      "url": "https://tentram.id/blog/5-tips-rumah-bersih-setelah-renovasi",
+      "title": "5 Tips Rumah Bersih Setelah Renovasi",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog": {
+      "url": "https://tentram.id/blog",
+      "title": "Blog",
+      "type": "page",
+      "status": 200,
+      "internal_links": [
+        "/#faq",
+        "",
+        "/blog/merawat-sofa-karpet-hydro-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/layanan",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/favicon.ico",
+        "/favicon.svg",
+        "/blog/harga-cleaning-service-jakarta",
+        "/#alasan",
+        "/#situasi",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/#solusi",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan/after-renovasi",
+        "/layanan/cleaning-kamar-mandi",
+        "/layanan/deep-cleaning",
+        "/blog/merawat-sofa-karpet-hydro-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/layanan",
+        "/layanan/cleaning-gudang",
+        "/layanan/home-cleaning",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/layanan/hydro-cleaning",
+        "/layanan/move-in",
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/layanan/cuci-ac",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/layanan/office-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.ico",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /#solusi"
+      ]
+    },
+    "/layanan/after-renovasi": {
+      "url": "https://tentram.id/layanan/after-renovasi",
+      "title": "After Renovasi",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/harga-cleaning-service-jakarta": {
+      "url": "https://tentram.id/blog/harga-cleaning-service-jakarta",
+      "title": "Harga Cleaning Service Jakarta",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/layanan/deep-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/blog/deep-cleaning-jakarta-proses-dan-harga": {
+      "url": "https://tentram.id/blog/deep-cleaning-jakarta-proses-dan-harga",
+      "title": "Deep Cleaning Jakarta Proses Dan Harga",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/layanan/home-cleaning",
+        "/layanan/deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/move-in": {
+      "url": "https://tentram.id/layanan/move-in",
+      "title": "Move In",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan": {
+      "url": "https://tentram.id/layanan",
+      "title": "Layanan",
+      "type": "page",
+      "status": 200,
+      "internal_links": [
+        "/#faq",
+        "",
+        "/layanan/after-renovasi",
+        "/layanan/cleaning-kamar-mandi",
+        "/layanan/deep-cleaning",
+        "/layanan",
+        "/layanan/cleaning-gudang",
+        "/layanan/home-cleaning",
+        "/favicon.ico",
+        "/layanan/hydro-cleaning",
+        "/favicon.svg",
+        "/#alasan",
+        "/#situasi",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/layanan/cuci-ac",
+        "/#solusi",
+        "/layanan/move-in",
+        "/layanan/office-cleaning",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan/after-renovasi",
+        "/layanan/cleaning-kamar-mandi",
+        "/layanan/deep-cleaning",
+        "/blog/merawat-sofa-karpet-hydro-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/layanan",
+        "/layanan/cleaning-gudang",
+        "/layanan/home-cleaning",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/layanan/hydro-cleaning",
+        "/layanan/move-in",
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/layanan/cuci-ac",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/layanan/office-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.ico",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /#solusi"
+      ]
+    },
+    "": {
+      "url": "https://tentram.id",
+      "title": "Home",
+      "type": "page",
+      "status": 200,
+      "internal_links": [
+        "/#faq",
+        "",
+        "/layanan/after-renovasi",
+        "/layanan/cleaning-kamar-mandi",
+        "/layanan/deep-cleaning",
+        "/_astro/index.BhIhuC5Z.css",
+        "/layanan",
+        "/layanan/cleaning-gudang",
+        "/layanan/home-cleaning",
+        "/favicon.ico",
+        "/layanan/hydro-cleaning",
+        "/favicon.svg",
+        "/#alasan",
+        "/#situasi",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/layanan/cuci-ac",
+        "/#solusi",
+        "/layanan/move-in",
+        "/layanan/office-cleaning",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan/after-renovasi",
+        "/layanan/cleaning-kamar-mandi",
+        "/layanan/deep-cleaning",
+        "/blog/merawat-sofa-karpet-hydro-cleaning",
+        "/blog/5-tips-rumah-bersih-setelah-renovasi",
+        "/blog/dampak-rumah-kotor-untuk-kesehatan",
+        "/blog/tips-pindahan-rumah-bersih",
+        "/layanan",
+        "/layanan/cleaning-gudang",
+        "/layanan/home-cleaning",
+        "/blog/home-cleaning-vs-deep-cleaning",
+        "/layanan/hydro-cleaning",
+        "/layanan/move-in",
+        "/blog/harga-cleaning-service-jakarta",
+        "/blog/kapan-waktu-tepat-deep-cleaning",
+        "/layanan/cuci-ac",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/blog/kenapa-harus-pakai-home-cleaning-service",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/home-cleaning-service-jakarta-apa-yang-dapat",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/layanan/office-cleaning",
+        "/blog"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /_astro/index.BhIhuC5Z.css",
+        "Link points to non-existent page: /favicon.ico",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /#solusi"
+      ]
+    },
+    "/blog/kapan-waktu-tepat-deep-cleaning": {
+      "url": "https://tentram.id/blog/kapan-waktu-tepat-deep-cleaning",
+      "title": "Kapan Waktu Tepat Deep Cleaning",
+      "type": "blog",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/blog/deep-cleaning-jakarta-proses-dan-harga",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/blog/apa-itu-deep-cleaning",
+        "/blog/tanda-rumah-butuh-deep-cleaning",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "/blog",
+        "/blog/apa-itu-deep-cleaning"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    },
+    "/layanan/hydro-cleaning": {
+      "url": "https://tentram.id/layanan/hydro-cleaning",
+      "title": "Hydro Cleaning",
+      "type": "service",
+      "status": 200,
+      "internal_links": [
+        "",
+        "/#faq",
+        "/favicon.svg",
+        "/#alasan",
+        "/#solusi",
+        "/#situasi",
+        "/layanan",
+        "/_astro/_slug_.407gi4KC.css",
+        "/_astro/StickyWhatsApp.GPwjozK8.css",
+        "/favicon.ico",
+        "/blog"
+      ],
+      "incoming_links": [
+        "",
+        "/layanan"
+      ],
+      "issues": [
+        "Link points to non-existent page: /#faq",
+        "Link points to non-existent page: /favicon.svg",
+        "Link points to non-existent page: /#alasan",
+        "Link points to non-existent page: /#solusi",
+        "Link points to non-existent page: /#situasi",
+        "Link points to non-existent page: /_astro/_slug_.407gi4KC.css",
+        "Link points to non-existent page: /_astro/StickyWhatsApp.GPwjozK8.css",
+        "Link points to non-existent page: /favicon.ico"
+      ]
+    }
+  }
+}

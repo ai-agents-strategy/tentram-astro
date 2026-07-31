@@ -1,5 +1,7 @@
 ---
 title: "Deep Cleaning Jakarta: Proses, Waktu, dan Estimasi Biaya"
+image: '/deep-cleaning-jakarta-proses-dan-harga.jpg'
+imageAlt: 'Layanan deep cleaning profesional di Jakarta'
 description: "Ingin tahu bagaimana proses deep cleaning di Jakarta? Pelajari tahapan pengerjaan, estimasi waktu, dan faktor yang mempengaruhi biaya."
 pubDate: 2026-07-30
 tags: ["deep-cleaning", "harga", "jakarta"]

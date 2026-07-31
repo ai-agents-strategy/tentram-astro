@@ -3,6 +3,7 @@ title: '5 Tips Menjaga Rumah Tetap Bersih Setelah Renovasi'
 description: 'Debu dan sisa material renovasi bisa bertahan lama jika tidak dibersihkan dengan cara yang tepat. Berikut 5 tips dari tim Tentram.'
 pubDate: 2026-06-01
 image: '/renovasi.png'
+imageAlt: 'Tips menjaga rumah tetap bersih setelah renovasi'
 tags: ['renovasi', 'tips']
 ---
 

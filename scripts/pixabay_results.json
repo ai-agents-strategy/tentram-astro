@@ -1,0 +1,34 @@
+[
+  {
+    "slug": "apa-itu-deep-cleaning",
+    "status": "success",
+    "image": "/blog-images/apa-itu-deep-cleaning.jpg",
+    "alt": "Ilustrasi deep cleaning rumah membersihkan area yang jarang terjangkau"
+  },
+  {
+    "slug": "dampak-rumah-kotor-untuk-kesehatan",
+    "status": "download_failed"
+  },
+  {
+    "slug": "deep-cleaning-jakarta-proses-dan-harga",
+    "status": "success",
+    "image": "/blog-images/deep-cleaning-jakarta-proses-dan-harga.jpg",
+    "alt": "Layanan deep cleaning profesional di Jakarta"
+  },
+  {
+    "slug": "home-cleaning-service-jakarta-apa-yang-dapat",
+    "status": "success",
+    "image": "/blog-images/home-cleaning-service-jakarta-apa-yang-dapat.jpg",
+    "alt": "Tim home cleaning service membersihkan rumah"
+  },
+  {
+    "slug": "kenapa-harus-pakai-home-cleaning-service",
+    "status": "success",
+    "image": "/blog-images/kenapa-harus-pakai-home-cleaning-service.jpg",
+    "alt": "Manfaat menggunakan jasa home cleaning service profesional"
+  },
+  {
+    "slug": "tanda-rumah-butuh-deep-cleaning",
+    "status": "download_failed"
+  }
+]

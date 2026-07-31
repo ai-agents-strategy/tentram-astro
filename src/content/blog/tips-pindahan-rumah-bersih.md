@@ -3,6 +3,7 @@ title: '5 Tips Pindahan Rumah agar Bersih dan Rapi di Hari Pertama'
 description: 'Pindahan rumah membuat banyak sudut terabaikan. Tips praktis agar rumah baru siap ditempati tanpa membawa debu, kotoran, atau bau dari properti lama.'
 pubDate: 2026-07-24
 image: '/Pindahan.png'
+imageAlt: 'Tips pindahan rumah agar bersih dan rapi'
 tags: ['move-in', 'tips', 'pindahan']
 ---
 

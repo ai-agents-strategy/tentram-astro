@@ -3,6 +3,7 @@ title: 'Berapa Harga Cleaning Service Jakarta? Panduan Estimasi 2026'
 description: 'Kisaran harga jasa cleaning service di Jakarta untuk home cleaning, deep cleaning, office cleaning, dan after renovation. Plus cara menghitung biaya sesuai luas dan kondisi.'
 pubDate: 2026-07-24
 image: '/kantor.png'
+imageAlt: 'Estimasi harga cleaning service Jakarta 2026'
 tags: ['pricing', 'jakarta', 'tips']
 ---
 

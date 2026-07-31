@@ -1,5 +1,7 @@
 ---
 title: "Home Cleaning Service Jakarta: Apa yang Anda Dapatkan?"
+image: '/home-cleaning-service-jakarta-apa-yang-dapat.jpg'
+imageAlt: 'Tim home cleaning service membersihkan rumah'
 description: "Simak detail layanan home cleaning service di Jakarta — apa saja yang dibersihkan, bagaimana prosesnya, dan berapa biayanya."
 pubDate: 2026-08-02
 tags: ["home-cleaning", "jakarta", "harga"]

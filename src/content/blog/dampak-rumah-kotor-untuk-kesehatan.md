@@ -1,5 +1,7 @@
 ---
 title: "Dampak Rumah Kotor terhadap Kesehatan Keluarga yang Sering Diabaikan"
+image: '/dampak-rumah-kotor-untuk-kesehatan.jpg'
+imageAlt: 'Dampak debu dan kotoran rumah terhadap kesehatan'
 description: "Rumah yang jarang dibersihkan bukan hanya tidak nyaman — tapi juga berisiko untuk kesehatan. Kenali dampaknya dan cara mengatasinya."
 pubDate: 2026-07-31
 tags: ["kesehatan", "home-cleaning", "tips"]

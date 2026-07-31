@@ -76,6 +76,10 @@ export const services: Service[] = [
 			{ q: 'Apakah bisa ditangani dalam sehari?', a: 'Bisa untuk apartemen atau rumah kecil. Estimasi pasti diberikan setelah survey.' },
 		],
 		ctaMsg: 'Halo Tentram, saya baru selesai renovasi dan butuh layanan After Renovasi Cleaning. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: '5 Tips Rumah Bersih Setelah Renovasi', href: '/blog/5-tips-rumah-bersih-setelah-renovasi/' },
+			{ label: 'Kapan Waktu Tepat Deep Cleaning?', href: '/blog/kapan-waktu-tepat-deep-cleaning/' },
+		],
 	},
 	{
 		slug: 'move-in',
@@ -102,6 +106,11 @@ export const services: Service[] = [
 			{ q: 'Berapa lama prosesnya?', a: 'Apartemen 2–4 jam, rumah standar 4–8 jam tergantung luas.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh Move In Cleaning sebelum pindah rumah. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Tips Pindahan Rumah Bersih', href: '/blog/tips-pindahan-rumah-bersih/' },
+			{ label: 'Apa Itu Deep Cleaning?', href: '/blog/apa-itu-deep-cleaning/' },
+			{ label: 'Home Cleaning vs Deep Cleaning', href: '/blog/home-cleaning-vs-deep-cleaning/' },
+		],
 	},
 	{
 		slug: 'home-cleaning',
@@ -128,6 +137,11 @@ export const services: Service[] = [
 			{ q: 'Apakah saya harus ada di rumah?', a: 'Tidak harus. Banyak pelanggan memberikan instruksi dan akses saat cleaning.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh Home Cleaning untuk rumah/apartemen saya. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Home Cleaning vs Deep Cleaning', href: '/blog/home-cleaning-vs-deep-cleaning/' },
+			{ label: 'Kenapa Harus Pakai Home Cleaning Service', href: '/blog/kenapa-harus-pakai-home-cleaning-service/' },
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
+		],
 	},
 	{
 		slug: 'office-cleaning',
@@ -154,6 +168,10 @@ export const services: Service[] = [
 			{ q: 'Berapa besar kantor yang bisa ditangani?', a: 'Dari kantor kecil hingga gedung multi-lantai. Estimasi disesuaikan setelah survey.' },
 		],
 		ctaMsg: 'Halo Tentram, kantor kami butuh layanan Office Cleaning. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
+			{ label: 'Deep Cleaning Jakarta Proses dan Harga', href: '/blog/deep-cleaning-jakarta-proses-dan-harga/' },
+		],
 	},
 	{
 		slug: 'deep-cleaning',
@@ -250,6 +268,10 @@ export const services: Service[] = [
 			{ q: 'Seberapa sering perlu hydro cleaning?', a: 'Untuk rumah normal 4–6 bulan, untuk rumah dengan anak/peliharaan 2–3 bulan.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Hydro Cleaning untuk sofa/kasur/karpet. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Merawat Sofa Karpet Hydro Cleaning', href: '/blog/merawat-sofa-karpet-hydro-cleaning/' },
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
+		],
 	},
 	{
 		slug: 'cuci-ac',
@@ -276,6 +298,9 @@ export const services: Service[] = [
 			{ q: 'Apakah harus ada di rumah saat pengerjaan?', a: 'Ya, minimal untuk memberikan akses ke unit AC. Pengerjaan diawasi oleh tim.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Cuci AC. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
+		],
 	},
 	{
 		slug: 'cleaning-gudang',
@@ -302,6 +327,10 @@ export const services: Service[] = [
 			{ q: 'Apakah perlu listrik/air di gudang?', a: 'Idealnya ya, agar pembersihan maksimal. Jika terbatas, tim akan menyesuaikan.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Cleaning Gudang. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Deep Cleaning Jakarta Proses dan Harga', href: '/blog/deep-cleaning-jakarta-proses-dan-harga/' },
+			{ label: 'Kapan Waktu Tepat Deep Cleaning?', href: '/blog/kapan-waktu-tepat-deep-cleaning/' },
+		],
 	},
 	{
 		slug: 'cleaning-kamar-mandi',
@@ -327,6 +356,10 @@ export const services: Service[] = [
 			{ q: 'Apakah bisa untuk kamar mandi kantor/kost?', a: 'Bisa, kami melayani kamar mandi di berbagai jenis properti.' },
 		],
 		ctaMsg: 'Halo Tentram, saya butuh layanan Cleaning Kamar Mandi. Boleh minta penawaran?',
+		internalLinks: [
+			{ label: 'Apa Itu Deep Cleaning?', href: '/blog/apa-itu-deep-cleaning/' },
+			{ label: 'Harga Cleaning Service Jakarta', href: '/blog/harga-cleaning-service-jakarta/' },
+		],
 	},
 ];
 

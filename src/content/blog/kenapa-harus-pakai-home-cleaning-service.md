@@ -1,5 +1,7 @@
 ---
 title: "Kenapa Harus Pakai Home Cleaning Service? 5 Alasan yang Masuk Akal"
+image: '/kenapa-harus-pakai-home-cleaning-service.jpg'
+imageAlt: 'Manfaat menggunakan jasa home cleaning service profesional'
 description: "Membersihkan rumah sendiri memang bisa. Tapi apakah efektif? Pelajari 5 alasan kenapa home cleaning service lebih praktis dan efisien."
 pubDate: 2026-08-01
 tags: ["home-cleaning", "tips"]

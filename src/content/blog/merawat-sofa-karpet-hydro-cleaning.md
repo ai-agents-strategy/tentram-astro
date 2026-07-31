@@ -3,6 +3,7 @@ title: 'Cara Merawat Sofa dan Karpet Agar Awet dengan Hydro Cleaning'
 description: 'Sofa dan karpet menyimpan debu, tungau, dan noda yang tidak terlihat kasat mata. Hydro cleaning jadi solusi perawatan yang tepat.'
 pubDate: 2026-07-01
 image: '/HydroCleaning.png'
+imageAlt: 'Cara merawat sofa dan karpet dengan hydro cleaning'
 tags: ['hydro-cleaning', 'tips']
 ---
 

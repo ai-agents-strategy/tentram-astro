@@ -143,6 +143,6 @@ Anda mungkin bertanya-tanya: kenapa tidak bersihkan sendiri saja? Jawabannya sed
 
 Jika rumah Anda di Jakarta, BSD, atau Tangerang butuh deep cleaning, jangan ragu untuk menghubungi kami. Tim Tentram Cleaning Service siap membantu survei dan menjadwalkan pengerjaan.
 
-**Konsultasi gratis via WhatsApp:** [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
+**Konsultasi via WhatsApp:** [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
 
 Lihat detail layanan kami: [Deep Cleaning](/layanan/deep-cleaning/) | [Home Cleaning](/layanan/home-cleaning/)

@@ -109,6 +109,6 @@ Jika rumah Anda termasuk yang sudah lama tidak dibersihkan secara menyeluruh, at
 
 Tim Tentram Cleaning Service melayani deep cleaning untuk rumah dan apartemen di **Jakarta, BSD, dan Tangerang**. Kami bisa bantu survei kondisi rumah Anda dan memberikan rekomendasi yang sesuai.
 
-**Hubungi kami via WhatsApp** untuk konsultasi gratis: [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
+**Hubungi kami via WhatsApp** untuk konsultasi: [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
 
 Atau pelajari lebih lanjut tentang layanan kami di [halaman Deep Cleaning](/layanan/deep-cleaning/).

@@ -63,6 +63,6 @@ Di Tentram, kami tidak menjual layanan termurah. Kami menawarkan estimasi yang j
 
 Kami melayani cleaning service untuk Jakarta Selatan, Jakarta Barat, Jakarta Utara, Jakarta Timur, BSD City, Gading Serpong, Alam Sutera, Bintaro, Tangerang, dan Bekasi.
 
-Ingin estimasi gratis untuk rumah, apartemen, atau kantor Anda? Hubungi tim Tentram via WhatsApp.
+Ingin estimasi untuk rumah, apartemen, atau kantor Anda? Hubungi tim Tentram via WhatsApp.
 
 Baca juga: [Deep Cleaning Jakarta: Proses, Waktu, dan Estimasi Biaya](/blog/deep-cleaning-jakarta-proses-dan-harga/) | [Home Cleaning Service Jakarta: Apa yang Anda Dapatkan?](/blog/home-cleaning-service-jakarta-apa-yang-dapat/)

@@ -93,7 +93,7 @@ Membersihkan rumah memang bisa sendiri. Tapi bukan berarti harus sendiri. Home c
 
 Yang Anda dapatkan: rumah bersih, waktu lebih banyak untuk hal yang penting, dan satu beban kurang di pundak.
 
-**Mau coba home cleaning service?** Hubungi kami untuk konsultasi gratis: [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
+**Mau coba home cleaning service?** Hubungi kami untuk konsultasi: [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
 
 Lihat detail layanan [Home Cleaning](/layanan/home-cleaning/) kami. Untuk pembersihan yang lebih mendalam, lihat juga [Deep Cleaning](/layanan/deep-cleaning/).
 

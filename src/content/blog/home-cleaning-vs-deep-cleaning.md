@@ -65,6 +65,6 @@ Setelah deep cleaning, Anda bisa menjaganya dengan home cleaning berkala. Kombin
 
 Tim kami melayani home cleaning dan deep cleaning untuk area Jakarta Selatan, Jakarta Barat, Jakarta Utara, Jakarta Timur, BSD City, Gading Serpong, Alam Sutera, Bintaro, Tangerang, dan Bekasi.
 
-Butuh bantuan memilih layanan yang tepat atau ingin estimasi gratis? Chat tim Tentram via WhatsApp.
+Butuh bantuan memilih layanan yang tepat atau ingin estimasi? Chat tim Tentram via WhatsApp.
 
 Baca juga: [Apa Itu Deep Cleaning?](/blog/apa-itu-deep-cleaning/) | [Home Cleaning Service Jakarta: Apa yang Anda Dapatkan?](/blog/home-cleaning-service-jakarta-apa-yang-dapat/)

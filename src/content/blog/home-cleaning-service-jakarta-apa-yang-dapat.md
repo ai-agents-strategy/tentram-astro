@@ -154,7 +154,7 @@ Home cleaning service bisa jadi solusi yang tepat.
 
 Jika Anda tinggal di **Jakarta, BSD, atau Tangerang** dan ingin mencoba home cleaning service, hubungi kami. Tim Tentram Cleaning Service siap membantu menjaga rumah Anda tetap bersih dan nyaman.
 
-**Hubungi kami untuk konsultasi gratis:** [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
+**Hubungi kami untuk konsultasi:** [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
 
 Pelajari lebih lanjut: [Home Cleaning Service](/layanan/home-cleaning/) | [Deep Cleaning](/layanan/deep-cleaning/)
 

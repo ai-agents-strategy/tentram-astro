@@ -25,4 +25,4 @@ Untuk rumah dengan anak kecil atau hewan peliharaan, hydro cleaning setiap 2-3 b
 
 Selain membersihkan, hydro cleaning juga membantu menghilangkan bau tidak sedap dan memperpanjang usia pakai sofa maupun karpet Anda.
 
-Tertarik mencoba hydro cleaning untuk sofa, kasur, atau karpet di rumah Anda? Chat tim Tentram untuk penawaran gratis.
+Tertarik mencoba hydro cleaning untuk sofa, kasur, atau karpet di rumah Anda? Chat tim Tentram untuk penawaran.

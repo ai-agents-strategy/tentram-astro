@@ -7,13 +7,13 @@ imageAlt: 'Perbandingan home cleaning dan deep cleaning'
 tags: ['home-cleaning', 'deep-cleaning', 'tips']
 ---
 
-Kebanyakan pemilik rumah atau apartemen di Jakarta tidak membedakan home cleaning dan deep cleaning. Padahal memilih yang salah bisa membuat Anda membayar terlalu mahal untuk hasil yang tidak maksimal, atau sebaliknya: mengharapkan bersih menyeluruh dari layanan yang sebenarnya hanya merawat kebersihan harian.
+Kebanyakan pemilik rumah atau apartemen di Jakarta tidak membedakan **home cleaning** dan **deep cleaning**. Padahal memilih yang salah bisa membuat Anda membayar terlalu mahal untuk hasil yang tidak maksimal, atau sebaliknya: mengharapkan bersih menyeluruh dari layanan yang sebenarnya hanya merawat kebersihan harian.
 
 Artikel ini membantu Anda memahami perbedaan kedua layanan, kapan rumah Anda butuh masing-masing, dan bagaimana memperkirakan biaya yang wajar di area Jakarta, BSD, dan Tangerang.
 
 ## Apa itu home cleaning?
 
-Home cleaning adalah pembersihan rutin untuk menjaga rumah tetap nyaman sehari-hari. Tim membersihkan debu di permukaan, menyedot dan mengepel lantai, membersihkan kamar mandi ringan, merapikan kamar tidur, serta menangani dapur sederhana.
+**Home cleaning** adalah pembersihan rutin untuk menjaga rumah tetap nyaman sehari-hari. Tim membersihkan debu di permukaan, menyedot dan mengepel lantai, membersihkan kamar mandi ringan, merapikan kamar tidur, serta menangani dapur sederhana.
 
 Layanan ini cocok untuk:
 
@@ -21,17 +21,17 @@ Layanan ini cocok untuk:
 - Apartemen dengan lalu lintas kotoran normal.
 - Orang sibuk yang ingin rumah tetap rapi tanpa harus membersihkan sendiri setiap minggu.
 
-Frekuensi yang umum: mingguan atau dua mingguan.
+**Frekuensi yang umum:** mingguan atau dua mingguan.
 
 ## Apa itu deep cleaning?
 
-Deep cleaning menargetkan area yang tidak tersentuh oleh pembersihan rutin. Contohnya: debu di belakang dan bawah lemari, kerak sabun dan jamur di sela keramik, noda membandel di dinding dan kusen, serta sisa kotoran di celah-celah sempit.
+**Deep cleaning** menargetkan area yang tidak tersentuh oleh pembersihan rutin. Contohnya: debu di belakang dan bawah lemari, kerak sabun dan jamur di sela keramik, noda membandel di dinding dan kusen, serta sisa kotoran di celah-celah sempit.
 
 Layanan ini direkomendasikan saat:
 
-- Sudah lebih dari tiga bulan sejak pembersihan menyeluruh terakhir.
-- Ada tanda jamur, kerak, atau bau tidak sedap yang bertahan.
-- Rumah baru ditinggali setelah renovasi atau pindahan.
+- Sudah lebih dari **tiga bulan** sejak pembersihan menyeluruh terakhir.
+- Ada tanda **jamur, kerak, atau bau tidak sedap** yang bertahan.
+- Rumah baru ditinggali setelah **renovasi atau pindahan**.
 - Anda akan mengadakan acara besar dan ingin rumah benar-benar bersih.
 
 ## Perbedaan utama dari sudut hasil
@@ -46,20 +46,20 @@ Layanan ini direkomendasikan saat:
 
 ## Estimasi biaya di Jakarta dan sekitarnya
 
-Harga disesuaikan dengan luas area, kondisi, dan jumlah tenaga yang dibutuhkan. Berikut gambaran kasar untuk pemilik rumah dan apartemen:
+**Harga disesuaikan** dengan luas area, kondisi, dan jumlah tenaga yang dibutuhkan. Berikut gambaran kasar untuk pemilik rumah dan apartemen:
 
-- Home cleaning untuk apartemen studio atau 1 kamar: mulai dari kisaran harga yang ringan per kunjungan.
-- Home cleaning rumah 2-3 kamar: biaya menengah, cocok untuk perawatan rutin.
-- Deep cleaning rumah 2-3 kamar: lebih tinggi karena detail dan durasi lebih lama.
-- Deep cleaning apartemen: biasanya lebih ringan dari rumah dengan luas sama karena area lebih kompak.
+- **Home cleaning** untuk apartemen studio atau 1 kamar: mulai dari kisaran harga yang ringan per kunjungan.
+- **Home cleaning** rumah 2-3 kamar: biaya menengah, cocok untuk perawatan rutin.
+- **Deep cleaning** rumah 2-3 kamar: lebih tinggi karena detail dan durasi lebih lama.
+- **Deep cleaning** apartemen: biasanya lebih ringan dari rumah dengan luas sama karena area lebih kompak.
 
 Estimasi pasti selalu diberikan setelah tim melihat luas dan kondisi area, baik melalui foto, video call, atau survey singkat.
 
 ## Bagaimana memilih yang tepat?
 
-Jika rumah Anda sudah terawat dan hanya butuh bantuan menjaga kebersihan secara rutin, mulailah dengan home cleaning. Jika sudah lama tidak dibersihkan menyeluruh atau ada area yang terlihat kotor berlebihan, deep cleaning akan memberikan hasil lebih memuaskan.
+Jika rumah Anda sudah terawat dan hanya butuh bantuan menjaga kebersihan secara rutin, mulailah dengan **home cleaning**. Jika sudah lama tidak dibersihkan menyeluruh atau ada area yang terlihat kotor berlebihan, **deep cleaning** akan memberikan hasil lebih memuaskan.
 
-Setelah deep cleaning, Anda bisa menjaganya dengan home cleaning berkala. Kombinasi ini lebih ekonomis dalam jangka panjang dibandingkan memanggil deep cleaning berulang kali.
+Setelah deep cleaning, Anda bisa menjaganya dengan home cleaning berkala. **Kombinasi ini lebih ekonomis** dalam jangka panjang dibandingkan memanggil deep cleaning berulang kali.
 
 ## Area layanan Tentram
 

@@ -139,4 +139,4 @@ Ingat, **debu renovasi bukan debu biasa**. Jangan ragu untuk meminta bantuan jik
 
 Butuh bantuan membersihkan rumah setelah renovasi? Tim Tentram siap membantu dengan layanan **after renovation cleaning** yang profesional dan terjangkau. Hubungi kami via WhatsApp untuk konsultasi dan penawaran harga terbaik.
 
-Baca juga: [Apa Itu Deep Cleaning?](/blog/apa-itu-deep-cleaning/) | [7 Tanda Rumah Butuh Deep Cleaning](/blog/tanda-rumah-butuh-deep-cleaning/) | [Tips Membersihkan Rumah Setelah Banjir](/blog/tips-membersihkan-rumah-setelah-banjir/)
+Baca juga: [Apa Itu Deep Cleaning?](/blog/apa-itu-deep-cleaning/) | [7 Tanda Rumah Butuh Deep Cleaning](/blog/tanda-rumah-butuh-deep-cleaning/)

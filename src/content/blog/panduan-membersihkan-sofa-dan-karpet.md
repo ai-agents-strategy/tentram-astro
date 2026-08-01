@@ -193,3 +193,5 @@ Butuh bantuan membersihkan sofa dan karpet di rumah Anda? Chat tim **Tentram** m
 - [Apa itu Deep Cleaning?](/blog/apa-itu-deep-cleaning)
 - [Home Cleaning vs Deep Cleaning](/blog/home-cleaning-vs-deep-cleaning)
 - [Tanda Rumah Butuh Deep Cleaning](/blog/tanda-rumah-butuh-deep-cleaning)
+
+Baca juga: [Merawat Sofa dan Karpet dengan Hydro Cleaning](/blog/merawat-sofa-karpet-hydro-cleaning/) | [Apa Itu Deep Cleaning?](/blog/apa-itu-deep-cleaning/) | [Home Cleaning vs Deep Cleaning](/blog/home-cleaning-vs-deep-cleaning/)

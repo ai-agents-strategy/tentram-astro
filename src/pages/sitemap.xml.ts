@@ -13,6 +13,7 @@ export const GET: APIRoute = async ({ site }) => {
 
 	const routes = [
 		{ path: '/', priority: '1.0', changefreq: 'weekly' },
+		{ path: '/jasa-kebersihan/', priority: '0.9', changefreq: 'weekly' },
 		{ path: '/blog/', priority: '0.8', changefreq: 'weekly' },
 		{ path: '/layanan/', priority: '0.9', changefreq: 'weekly' },
 	];

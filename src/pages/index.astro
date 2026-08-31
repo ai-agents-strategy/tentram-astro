@@ -1,35 +1,289 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import { wa } from '../lib/whatsapp';
+import WhatsAppIcon from '../components/icons/WhatsAppIcon.astro';
 import SiteHeader from '../components/SiteHeader.astro';
-import Hero from '../components/Hero.astro';
-import Situations from '../components/Situations.astro';
-import WhyTentram from '../components/WhyTentram.astro';
-import BeforeAfter from '../components/BeforeAfter.astro';
-import BookingSteps from '../components/BookingSteps.astro';
-import Reviews from '../components/Reviews.astro';
-import ServiceArea from '../components/ServiceArea.astro';
-import Faq from '../components/Faq.astro';
-import FinalCta from '../components/FinalCta.astro';
 import SiteFooter from '../components/SiteFooter.astro';
 import StickyWhatsApp from '../components/StickyWhatsApp.astro';
+import Layout from '../layouts/Layout.astro';
+
+const ctaMsg = 'Halo Tentram, saya ingin bertanya tentang layanan property management. [Web]';
+
+const targets = [
+	{ emoji: '💼', title: 'Investor Properti', body: 'Punya apartemen untuk disewakan tapi tidak sempat mengurusnya langsung.' },
+	{ emoji: '🏢', title: 'Pemilik Multi-Unit', body: 'Mengelola beberapa apartemen dan butuh satu sistem yang terpadu.' },
+	{ emoji: '✈️', title: 'Pemilik di Luar Kota', body: 'Tidak bisa mengawasi properti secara rutin karena jarak.' },
+	{ emoji: '🧳', title: 'Ekspatriat & Profesional Sibuk', body: 'Tidak ingin repot dengan urusan penyewa dan perawatan unit.' },
+];
+
+const services = [
+	{
+		emoji: '🤝',
+		title: 'Manajemen Penyewa',
+		items: [
+			'Pencarian dan seleksi penyewa',
+			'Pemasaran unit di platform properti',
+			'Penyusunan perjanjian sewa',
+			'Koordinasi check-in dan check-out',
+			'Penanganan keluhan penyewa',
+		],
+	},
+	{
+		emoji: '🧹',
+		title: 'Kebersihan & Pemeliharaan',
+		items: [
+			'Deep cleaning sebelum & sesudah sewa',
+			'Regular cleaning unit dan area umum',
+			'Maintenance check berkala',
+			'Perbaikan minor (keran, lampu, AC)',
+			'Quality inspection terdokumentasi',
+		],
+	},
+	{
+		emoji: '💰',
+		title: 'Administrasi & Keuangan',
+		items: [
+			'Penagihan sewa tepat waktu',
+			'Laporan keuangan bulanan',
+			'Pengelolaan deposit',
+			'Pembayaran IPL, listrik, air',
+			'Rekonsiliasi keuangan',
+		],
+	},
+	{
+		emoji: '💬',
+		title: 'Komunikasi Terpusat',
+		items: [
+			'Satu titik kontak untuk Anda',
+			'Channel komunikasi dengan penyewa',
+			'Notifikasi untuk hal yang butuh perhatian',
+			'Dokumentasi rapi tiap keputusan',
+		],
+	},
+];
+
+const advantages = [
+	{ emoji: '🧼', title: 'Berbasis Kebersihan Profesional', body: 'Berawal dari layanan cleaning, unit yang baru check-out bisa langsung dibersihkan tanpa menunggu vendor lain.' },
+	{ emoji: '📍', title: 'Tim Lokal di Jakarta', body: 'Respons cepat untuk masalah darurat dan koordinasi langsung dengan building management.' },
+	{ emoji: '🎛️', title: 'Paket Fleksibel', body: 'Pilih sesuai kebutuhan — dari hanya kebersihan hingga pengelolaan penuh A sampai Z.' },
+	{ emoji: '📄', title: 'Harga Transparan', body: 'Biaya dijelaskan di awal kerja sama, tanpa biaya tersembunyi.' },
+];
+
+const steps = [
+	{ n: '1', title: 'Konsultasi awal', body: 'Ceritakan kebutuhan apartemen Anda, kami rekomendasikan paket yang sesuai.' },
+	{ n: '2', title: 'Survey unit', body: 'Tim Tentram mengecek kondisi unit dan memberi estimasi biaya.' },
+	{ n: '3', title: 'Perjanjian kerja sama', body: 'Kesepakatan jelas soal layanan, biaya, dan kewajiban masing-masing.' },
+	{ n: '4', title: 'Onboarding', body: 'Fotografi unit, pencatatan kondisi awal, dan koordinasi dimulai.' },
+	{ n: '5', title: 'Pengelolaan aktif', body: 'Tim menjalankan layanan sesuai perjanjian dengan laporan berkala.' },
+];
+
+const pricing = [
+	{ label: 'Manajemen penyewa', range: 'Sesuai kesepakatan' },
+	{ label: 'Kebersihan rutin', range: 'Sesuai luas unit' },
+	{ label: 'Pemeliharaan', range: 'Sesuai kebutuhan' },
+	{ label: 'Administrasi', range: 'Flat rate per bulan' },
+];
+
+const faqs = [
+	{ q: 'Apakah Tentram menerima apartemen dengan luas tertentu?', a: 'Tentram melayani berbagai tipe apartemen, mulai dari studio hingga unit multi-bedroom. Hubungi kami untuk konsultasi dan survey unit Anda.' },
+	{ q: 'Apakah apartemen saya harus kosong terlebih dahulu?', a: 'Tidak harus. Tim Tentram bisa mulai mengelola apartemen Anda meskipun masih ada penyewa aktif, dengan transisi yang mulus tanpa mengganggu penghuni.' },
+	{ q: 'Apakah layanan kebersihan sudah termasuk dalam paket?', a: 'Ya. Kebersihan adalah keunggulan utama Tentram — setiap paket property management sudah termasuk layanan kebersihan sesuai jadwal yang disepakati.' },
+	{ q: 'Berapa lama waktu untuk mulai beroperasi?', a: 'Setelah penandatanganan perjanjian, Tentram biasanya bisa mulai beroperasi dalam 3–5 hari kerja, tergantung kondisi unit dan kebutuhan onboarding.' },
+	{ q: 'Bagaimana jika saya ingin berhenti menggunakan layanan?', a: 'Tentram memberikan fleksibilitas kontrak. Anda bisa berdiskusi dengan tim kami mengenai syarat dan ketentuan pengakhiran kerja sama.' },
+];
+
+const relatedArticles = [
+	{ label: 'Apa Itu Property Management?', href: '/blog/apa-itu-property-management/' },
+	{ label: 'Kapan Anda Butuh Jasa Property Management?', href: '/blog/kapan-butuh-property-management/' },
+	{ label: 'Biaya Tersembunyi Mengelola Apartemen Sendiri', href: '/blog/biaya-tersembunyi-mengelola-apartemen-sendiri/' },
+	{ label: 'Tentram Property Management: Layanan Profesional', href: '/blog/tentram-property-management/' },
+	{ label: 'Mulai Property Management Sekarang', href: '/blog/mulai-property-management-sekarang/' },
+];
+
+const schema = {
+	'@context': 'https://schema.org',
+	'@type': 'Service',
+	name: 'Tentram Property Management',
+	description: 'Layanan pengelolaan apartemen end-to-end: manajemen penyewa, kebersihan & pemeliharaan, administrasi keuangan, dan komunikasi terpusat.',
+	url: 'https://tentram.id/',
+	provider: {
+		'@type': 'LocalBusiness',
+		'@id': 'https://tentram.id/#business',
+		name: 'Tentram Cleaning Service',
+	},
+	areaServed: { '@type': 'City', name: 'Jakarta' },
+};
+
+const faqSchema = {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faqs.map((f) => ({
+		'@type': 'Question',
+		name: f.q,
+		acceptedAnswer: { '@type': 'Answer', text: f.a },
+	})),
+};
 ---
 
-<Layout>
+<Layout
+	title="Property Management Apartemen Jakarta — Tentram"
+	description="Kelola apartemen Anda tanpa ribet. Tentram Property Management menangani penyewa, kebersihan, dan administrasi sehingga Anda dapat passive income tanpa repot."
+	ogImage="/airbnb-propertisewa.png"
+	canonical="/"
+>
 	<main>
 		<SiteHeader />
-		<Hero />
-		<Situations />
-		<WhyTentram />
-		<BeforeAfter />
-		<BookingSteps />
-		<Reviews />
-		<ServiceArea />
-		<Faq />
-		<FinalCta />
+
+		<section class="pm-hero">
+			<div class="pm-hero-copy">
+				<p class="eyebrow">Tentram Property Management</p>
+				<h1>Duduk Manis, Apartemen Anda Tetap Hasilkan <em>Passive Income</em></h1>
+				<p class="pm-hero-desc">
+					Sewakan apartemen Anda tanpa repot. Dari cari penyewa, kebersihan unit,
+					sampai laporan keuangan bulanan — satu tim yang urus, Anda cukup terima laporannya.
+				</p>
+				<a class="btn btn-wa btn-lg" href={wa(ctaMsg)} target="_blank" rel="noopener">
+					<WhatsAppIcon />
+					Konsultasi Gratis via WhatsApp
+				</a>
+				<ul class="pm-trust" aria-label="Keunggulan">
+					<li>Berawal dari cleaning profesional</li>
+					<li>Tim lokal Jakarta</li>
+					<li>Harga transparan</li>
+				</ul>
+			</div>
+			<div class="pm-hero-media">
+				<img src="/airbnb-propertisewa.png" alt="Apartemen yang dikelola Tentram Property Management" loading="eager" />
+			</div>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">Untuk Siapa</p>
+				<h2>Cocok untuk pemilik apartemen seperti ini</h2>
+			</header>
+			<div class="grid-4">
+				{targets.map((t) => (
+					<article class="target-card">
+						<span class="target-emoji" aria-hidden="true">{t.emoji}</span>
+						<h3>{t.title}</h3>
+						<p>{t.body}</p>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">Layanan</p>
+				<h2>Satu paket, empat area yang kami urus</h2>
+			</header>
+			<div class="grid-4">
+				{services.map((s) => (
+					<article class="service-card-pm">
+						<span class="target-emoji" aria-hidden="true">{s.emoji}</span>
+						<h3>{s.title}</h3>
+						<ul class="checklist">
+							{s.items.map((item) => <li>{item}</li>)}
+						</ul>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">Kenapa Tentram</p>
+				<h2>Beda dari property management biasa</h2>
+			</header>
+			<div class="grid-4">
+				{advantages.map((a) => (
+					<article class="why">
+						<span class="why-emoji" aria-hidden="true">{a.emoji}</span>
+						<h3>{a.title}</h3>
+						<p>{a.body}</p>
+					</article>
+				))}
+			</div>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">Cara Kerja</p>
+				<h2>Mulai kerja sama dalam 5 langkah</h2>
+			</header>
+			<ol class="steps">
+				{steps.map((s) => (
+					<li class="step">
+						<span class="step-n">{s.n}</span>
+						<div>
+							<h3>{s.title}</h3>
+							<p>{s.body}</p>
+						</div>
+					</li>
+				))}
+			</ol>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">Estimasi Biaya</p>
+				<h2>Struktur biaya yang transparan</h2>
+			</header>
+			<div class="pricing-table" role="table">
+				<div class="pricing-row pricing-head" role="row">
+					<span role="columnheader">Komponen</span>
+					<span role="columnheader">Kisaran Biaya</span>
+				</div>
+				{pricing.map((p) => (
+					<div class="pricing-row" role="row">
+						<span role="cell">{p.label}</span>
+						<span role="cell">{p.range}</span>
+					</div>
+				))}
+			</div>
+			<p class="pricing-note">Estimasi akurat diberikan setelah konsultasi dan survey unit Anda.</p>
+		</section>
+
+		<section class="section">
+			<header class="section-head">
+				<p class="eyebrow">FAQ</p>
+				<h2>Pertanyaan umum</h2>
+			</header>
+			<div class="faq">
+				{faqs.map((f) => (
+					<details class="faq-item">
+						<summary>{f.q}<span class="faq-icon" aria-hidden="true">+</span></summary>
+						<p>{f.a}</p>
+					</details>
+				))}
+			</div>
+		</section>
+
+		<section class="final-cta">
+			<h2>Jangan biarkan apartemen Anda terbengkalai</h2>
+			<p>Konsultasikan kondisi unit Anda ke tim Tentram, gratis dan tanpa komitmen.</p>
+			<a class="btn btn-wa btn-lg" href={wa(ctaMsg)} target="_blank" rel="noopener">
+				<WhatsAppIcon />
+				Chat WhatsApp Sekarang
+			</a>
+		</section>
+
+		<section class="section">
+			<h2 class="section-title">Artikel Terkait</h2>
+			<div class="internal-links">
+				{relatedArticles.map((link) => (
+					<a class="internal-link" href={link.href}>{link.label} →</a>
+				))}
+			</div>
+		</section>
+
 		<SiteFooter />
 	</main>
 	<StickyWhatsApp />
 </Layout>
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+<script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
 
 <style>
 	main {
@@ -37,5 +291,355 @@ import StickyWhatsApp from '../components/StickyWhatsApp.astro';
 		max-width: var(--maxw);
 		margin: 0 auto;
 		padding: 0 22px 90px;
+	}
+
+	.pm-hero {
+		padding: 36px 0 28px;
+		display: grid;
+		gap: 28px;
+		align-items: center;
+	}
+	.pm-hero-copy {
+		text-align: center;
+	}
+	.pm-hero-copy h1 {
+		margin: 12px 0 0;
+		font-size: 32px;
+		line-height: 1.14;
+		letter-spacing: -0.02em;
+	}
+	.pm-hero-copy h1 em {
+		font-style: italic;
+		font-weight: 600;
+		color: var(--green);
+	}
+	.pm-hero-desc {
+		margin: 16px auto 0;
+		max-width: 46ch;
+		color: var(--muted);
+		font-size: 16px;
+		line-height: 1.55;
+	}
+	.pm-hero-copy .btn {
+		margin-top: 24px;
+	}
+	.pm-trust {
+		list-style: none;
+		margin: 22px auto 0;
+		padding: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 8px;
+		font-size: 13.5px;
+		color: var(--muted);
+	}
+	.pm-trust li {
+		padding: 6px 12px;
+		border-radius: 999px;
+		border: 1px solid var(--line);
+		background: var(--surface);
+	}
+	.pm-hero-media {
+		border-radius: 16px;
+		overflow: hidden;
+		border: 1px solid var(--line);
+		background: var(--surface);
+	}
+	.pm-hero-media img {
+		display: block;
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		object-fit: cover;
+	}
+
+	.section {
+		padding: 44px 0 0;
+	}
+	.section-title {
+		font-size: 22px;
+		margin: 0 0 18px;
+		letter-spacing: -0.01em;
+	}
+
+	.grid-4 {
+		display: grid;
+		gap: 12px;
+		grid-template-columns: 1fr;
+	}
+	.target-card,
+	.service-card-pm {
+		padding: 24px 20px;
+		border-radius: 16px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+	}
+	.target-card {
+		text-align: center;
+	}
+	.target-emoji {
+		display: inline-grid;
+		place-items: center;
+		width: 48px;
+		height: 48px;
+		border-radius: 50%;
+		background: color-mix(in srgb, var(--green) 10%, transparent);
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	.target-card h3,
+	.service-card-pm h3 {
+		margin: 0 0 6px;
+		font-size: 16px;
+	}
+	.target-card p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 14px;
+		line-height: 1.5;
+	}
+	.service-card-pm .checklist {
+		margin-top: 10px;
+	}
+
+	.checklist {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 8px;
+	}
+	.checklist li {
+		position: relative;
+		padding-left: 22px;
+		font-size: 13.5px;
+		line-height: 1.45;
+		color: var(--muted);
+	}
+	.checklist li::before {
+		content: '✓';
+		position: absolute;
+		left: 0;
+		color: var(--green);
+		font-weight: 700;
+	}
+
+	.why {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		gap: 10px;
+		padding: 28px 20px;
+		border-radius: 16px;
+		background: var(--surface);
+		border: 1.5px solid var(--green);
+	}
+	.why-emoji {
+		flex-shrink: 0;
+		display: inline-grid;
+		place-items: center;
+		width: 56px;
+		height: 56px;
+		border-radius: 50%;
+		background: var(--green);
+		font-size: 28px;
+		line-height: 1.2;
+	}
+	.why h3 {
+		margin: 0;
+		font-size: 16px;
+		font-weight: 800;
+		color: var(--green);
+	}
+	.why p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 14px;
+		line-height: 1.45;
+	}
+
+	.steps {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		display: grid;
+		gap: 10px;
+	}
+	.step {
+		display: flex;
+		gap: 16px;
+		align-items: center;
+		padding: 14px 18px;
+		border-radius: 12px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+	}
+	.step-n {
+		flex-shrink: 0;
+		display: inline-grid;
+		place-items: center;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		background: var(--green);
+		color: #fff;
+		font-weight: 700;
+		font-size: 14px;
+	}
+	.step h3 {
+		margin: 0 0 1px;
+		font-size: 15px;
+	}
+	.step p {
+		margin: 0;
+		color: var(--muted);
+		font-size: 13.5px;
+	}
+
+	.pricing-table {
+		display: grid;
+		border: 1px solid var(--line);
+		border-radius: 12px;
+		overflow: hidden;
+	}
+	.pricing-row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
+	.pricing-row + .pricing-row {
+		border-top: 1px solid var(--line);
+	}
+	.pricing-row span {
+		padding: 14px 18px;
+		font-size: 14.5px;
+	}
+	.pricing-head {
+		background: var(--surface);
+		font-weight: 700;
+	}
+	.pricing-row:not(.pricing-head) span:last-child {
+		color: var(--muted);
+	}
+	.pricing-note {
+		margin: 14px 0 0;
+		color: var(--muted);
+		font-size: 13.5px;
+	}
+
+	.faq {
+		display: grid;
+		gap: 8px;
+	}
+	.faq-item {
+		background: var(--surface);
+		border: 1px solid var(--line);
+		border-radius: 12px;
+	}
+	.faq-item summary {
+		list-style: none;
+		cursor: pointer;
+		padding: 18px 20px;
+		font-weight: 600;
+		font-size: 15px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 12px;
+	}
+	.faq-item summary::-webkit-details-marker {
+		display: none;
+	}
+	.faq-item[open] summary {
+		color: var(--green);
+	}
+	.faq-icon {
+		flex-shrink: 0;
+		font-size: 20px;
+		line-height: 1;
+		color: var(--green);
+		transition: transform 0.2s ease;
+	}
+	.faq-item[open] .faq-icon {
+		transform: rotate(45deg);
+	}
+	.faq-item p {
+		margin: 0;
+		padding: 0 20px 18px;
+		color: var(--muted);
+		font-size: 14.5px;
+		line-height: 1.55;
+	}
+
+	.final-cta {
+		padding: 48px 0 8px;
+		text-align: center;
+	}
+	.final-cta h2 {
+		font-size: 26px;
+		letter-spacing: -0.02em;
+		margin: 0;
+	}
+	.final-cta p {
+		margin: 14px auto 22px;
+		max-width: 44ch;
+		color: var(--muted);
+		font-size: 16px;
+		line-height: 1.6;
+	}
+
+	.internal-links {
+		display: grid;
+		gap: 8px;
+	}
+	.internal-link {
+		display: block;
+		padding: 14px 18px;
+		border-radius: 10px;
+		background: var(--surface);
+		border: 1px solid var(--line);
+		text-decoration: none;
+		color: var(--green);
+		font-weight: 600;
+		font-size: 15px;
+		transition: border-color 0.2s;
+	}
+	.internal-link:hover {
+		border-color: var(--green);
+	}
+
+	@media (min-width: 640px) {
+		.pm-hero-copy h1 {
+			font-size: 40px;
+		}
+		.pm-hero {
+			grid-template-columns: 1fr 1fr;
+			gap: 40px;
+		}
+		.pm-hero-copy {
+			text-align: left;
+		}
+		.pm-trust,
+		.pm-hero-copy .btn {
+			justify-content: flex-start;
+		}
+		.pm-trust {
+			margin-left: 0;
+		}
+		.grid-4 {
+			grid-template-columns: repeat(2, 1fr);
+		}
+		.pricing-row {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media (min-width: 900px) {
+		.pm-hero-copy h1 {
+			font-size: 48px;
+		}
+		.grid-4 {
+			grid-template-columns: repeat(4, 1fr);
+		}
 	}
 </style>

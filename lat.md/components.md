@@ -20,6 +20,20 @@ All WA-branded buttons (`.btn-wa` and the floating `.wa-sticky`) share the label
 
 Icon is `src/components/icons/WhatsAppIcon.astro`, sized per placement (16px nav, 18px inline buttons, 26px floating sticky button). Used in `Hero.astro`, `FinalCta.astro` (primary button only — its secondary outline button keeps distinct "Chat via WhatsApp" copy), `BookingSteps.astro`, `SiteHeader.astro`, and `StickyWhatsApp.astro`.
 
+## Property Management landing page (now the homepage)
+
+`/` (`src/pages/index.astro`) is the Property Management conversion page for apartment owners, promoted to the homepage. The old `/property-management/` path now redirects to `/` via `redirects` in `astro.config.mjs`.
+
+Content (target-owner segments, four service-area cards, a pricing table, a 5-step onboarding flow, FAQ) is inlined directly in the page rather than added to `src/data/content.ts#services`, since it doesn't fit the `Service` interface used by cleaning jobs. It reuses the same design tokens and card/step/FAQ markup patterns as `src/pages/layanan/[slug].astro` for visual consistency, and emits its own `Service` + `FAQPage` JSON-LD the same way.
+
+The hero headline leads with a passive-income hook ("Duduk Manis, Apartemen Anda Tetap Hasilkan Passive Income"), styled with the same `em`-accent pattern as [[lat.md/components#Components#General cleaning-service page (moved to /jasa-kebersihan/)|Hero.astro's headline on the old homepage]]. All five [[lat.md/apartment-management-strategy#Apartment Management Strategy for Tentram Cleaning Service|property management funnel blog articles]] link here (updated from `/property-management/` to `/`), and the page links back to each article. It is intentionally not linked from `SiteHeader.astro`'s nav (which still points to `/jasa-kebersihan/` sections and `/layanan/`) — the homepage is reached via `/`, the blog funnel, and direct/ad traffic.
+
+## General cleaning-service page (moved to /jasa-kebersihan/)
+
+`/jasa-kebersihan/` (`src/pages/jasa-kebersihan/index.astro`) holds the general cleaning-service homepage content displaced when [[lat.md/components#Components#Property Management landing page (now the homepage)|the Property Management page became the homepage]]: `Hero`, `Situations`, `WhyTentram`, `BeforeAfter`, `BookingSteps`, `Reviews`, `ServiceArea`, `Faq`, `FinalCta`.
+
+`SiteHeader.astro`'s in-page anchor links (`#situasi`, `#solusi`, `#alasan`, `#faq`) point at sections defined here (`Situations.astro`, `WhyTentram.astro`, `Faq.astro`), so the nav — rendered on every page via the shared header — prefixes them with `/jasa-kebersihan/` rather than assuming they're on the current page.
+
 ## App deep-link redirect pages
 
 `/register-pin` and `/reset-pin` are standalone light landing pages for the mobile app: each tries to deep-link into the app and shows store download badges as fallback.

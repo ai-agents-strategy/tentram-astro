@@ -1,0 +1,45 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import SiteHeader from '../../components/SiteHeader.astro';
+import Hero from '../../components/Hero.astro';
+import Situations from '../../components/Situations.astro';
+import WhyTentram from '../../components/WhyTentram.astro';
+import BeforeAfter from '../../components/BeforeAfter.astro';
+import BookingSteps from '../../components/BookingSteps.astro';
+import Reviews from '../../components/Reviews.astro';
+import ServiceArea from '../../components/ServiceArea.astro';
+import Faq from '../../components/Faq.astro';
+import FinalCta from '../../components/FinalCta.astro';
+import SiteFooter from '../../components/SiteFooter.astro';
+import StickyWhatsApp from '../../components/StickyWhatsApp.astro';
+---
+
+<Layout
+	title="Jasa Kebersihan Profesional — Tentram"
+	description="Tentram — cleaning profesional untuk rumah, apartemen, dan kantor. Post renovation, move in, home cleaning, deep cleaning, & office cleaning. Dapatkan penawaran via WhatsApp."
+	canonical="/jasa-kebersihan/"
+>
+	<main>
+		<SiteHeader />
+		<Hero />
+		<Situations />
+		<WhyTentram />
+		<BeforeAfter />
+		<BookingSteps />
+		<Reviews />
+		<ServiceArea />
+		<Faq />
+		<FinalCta />
+		<SiteFooter />
+	</main>
+	<StickyWhatsApp />
+</Layout>
+
+<style>
+	main {
+		width: 100%;
+		max-width: var(--maxw);
+		margin: 0 auto;
+		padding: 0 22px 90px;
+	}
+</style>

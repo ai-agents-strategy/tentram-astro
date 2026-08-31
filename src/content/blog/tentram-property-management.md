@@ -214,4 +214,4 @@ Hubungi Tentram sekarang untuk konsultasi mengenai layanan property management.
 **Baca juga:**
 
 - [Apa Itu Property Management?](/blog/apa-itu-property-management/) — Pelajari konsep dasar property management
-- [Layanan Property Management](/layanan/property-management/) — Lihat detail layanan Tentram
+- [Layanan Property Management](/) — Lihat detail layanan Tentram

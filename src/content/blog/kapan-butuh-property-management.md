@@ -175,4 +175,4 @@ Tim **Tentram Cleaning Service** membantu Anda menjaga kondisi properti tetap pr
 
 **Hubungi kami sekarang** untuk konsultasi: [WhatsApp Tentram Cleaning Service](https://wa.me/6287790507560)
 
-Pelajari lebih lanjut tentang layanan [Property Management](/layanan/property-management/) kami atau baca [Apa Itu Property Management?](/blog/apa-itu-property-management/) untuk memahami layanan kami secara lengkap.
+Pelajari lebih lanjut tentang layanan [Property Management](/) kami atau baca [Apa Itu Property Management?](/blog/apa-itu-property-management/) untuk memahami layanan kami secara lengkap.

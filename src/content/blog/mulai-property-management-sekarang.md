@@ -222,4 +222,4 @@ Jangan tunda lagi. Hubungi tim Tentram sekarang dan mulai perjalanan Anda menuju
 
 **Artikel Terkait:**
 - [Tentram Property Management](/blog/tentram-property-management/) — Pelajari lebih lanjut tentang layanan property management kami
-- [Layanan Property Management](/layanan/property-management/) — Lihat detail layanan dan harga
+- [Layanan Property Management](/) — Lihat detail layanan dan harga

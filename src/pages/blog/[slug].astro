@@ -19,6 +19,46 @@ const { post } = Astro.props;
 const { Content } = await render(post);
 
 const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+
+// Extract FAQ Q&A from markdown source for FAQPage schema
+function extractFaq(markdown: string) {
+	const faq: { q: string; a: string }[] = [];
+	// Match ### Question followed by answer paragraph
+	const lines = markdown.split('\n');
+	let currentQ: string | null = null;
+	let inFaq = false;
+	for (let i = 0; i < lines.length; i++) {
+		const line = lines[i].trim();
+		if (line.startsWith('## ') && /faq|pertanyaan|tanya/i.test(line)) {
+			inFaq = true;
+			continue;
+		}
+		if (inFaq && line.startsWith('## ') && !/faq|pertanyaan|tanya/i.test(line)) {
+			break;
+		}
+		if (inFaq && line.startsWith('### ')) {
+			currentQ = line.replace(/^###\s+/, '').replace(/\*\*/g, '');
+		} else if (inFaq && currentQ && line && !line.startsWith('#') && !line.startsWith('|')) {
+			const answer = line.replace(/\*\*/g, '').trim();
+			if (answer) {
+				faq.push({ q: currentQ, a: answer });
+				currentQ = null;
+			}
+		}
+	}
+	return faq;
+}
+
+const faqItems = extractFaq(post.body ?? '');
+const faqSchema = faqItems.length > 0 ? {
+	'@context': 'https://schema.org',
+	'@type': 'FAQPage',
+	mainEntity: faqItems.map((f) => ({
+		'@type': 'Question',
+		name: f.q,
+		acceptedAnswer: { '@type': 'Answer', text: f.a },
+	})),
+} : null;
 ---
 
 <Layout title={`${post.data.title} — Tentram Blog`} description={post.data.description} ogImage={post.data.image}>
@@ -44,6 +84,8 @@ const dateFmt = new Intl.DateTimeFormat('id-ID', { day: 'numeric', month: 'long'
 	</main>
 	<StickyWhatsApp />
 </Layout>
+
+{faqSchema && <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />}
 
 <style>
 	main {

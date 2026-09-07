@@ -7,6 +7,8 @@ imageAlt: 'Panduan housekeeping service'
 tags: ['housekeeping', 'panduan', 'tips', 'cleaning']
 ---
 
+**Housekeeping service** adalah layanan pengelolaan dan pemeliharaan kebersihan rumah secara menyeluruh, mencakup pembersihan, penataan, dan perawatan agar rumah tetap rapi, teratur, dan nyaman.
+
 Anda mungkin pernah mendengar istilah **housekeeping service** saat mencari jasa kebersihan untuk rumah. Tapi apa sebenarnya housekeeping service itu? Apakah sama dengan cleaning service? Dan kapan sebenarnya Anda membutuhkannya?
 
 Banyak orang masih bingung membedakan berbagai jenis layanan kebersihan. Padahal memahami perbedaannya sangat penting agar Anda bisa memilih layanan yang tepat sesuai kebutuhan rumah Anda.
